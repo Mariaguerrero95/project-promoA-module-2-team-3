@@ -1,0 +1,22 @@
+.drop-down-share {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  height: 20px;
+
+  i {
+    padding-bottom: 5px;
+  }
+
+  &__buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    button {
+      border-radius: 20px;
+      background-color: aqua;
+      align-self: flex-start;
+    }
+  }
+}

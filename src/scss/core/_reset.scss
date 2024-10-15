@@ -9,3 +9,16 @@ ul{
 a{
   text-decoration: none;
 }
+// Reseteo los estilos de input
+input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  align-self: flex-start;
+}
+
+// Reseteo los estilos de botón
+button {
+  all: unset;
+  align-self: flex-start;
+}
