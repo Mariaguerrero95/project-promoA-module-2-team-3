@@ -1,16 +1,36 @@
 <fieldset>
   <legend class="drop-down-share">
-    <i class="fa-solid fa-share-nodes"></i>
-    <p>Comparte</p>
+    <div class="drop-down-share__text">
+      <i class="fa-solid fa-share-nodes"></i>
+      <p>Comparte</p>
+    </div>
+    
     <div class="drop-down-share__btn">
       <i class="fa-solid fa-chevron-down"></i>
     </div>
   </legend>
   <div class="drop-down-share__anchors">
-    <a href="mailto:" >Por e-mail</a>
-    <a href="https://www.instagram.com/" target="_blank" noreferrer >Por instagram</a>
-    <a href="https://web.whatsapp.com/">Por WhatsApp</a>
-    <a href="#">Imprimir</a>
+    
+    <div class="anchors__icon">
+      <a href="mailto:" >Por e-mail</a>
+      <i class="fa-regular fa-envelope"></i>
+    </div>
+
+    <div class="anchors__icon">
+      <a href="https://www.instagram.com/" target="_blank" noreferrer >Por instagram</a>
+      <i class="fa-brands fa-instagram"></i>
+    </div>
+
+    <div class="anchors__icon">
+      <a href="https://web.whatsapp.com/">Por WhatsApp</a>
+      <i class="fa-brands fa-whatsapp"></i>
+    </div>
+
+    <div class="anchors__icon">
+      <a href="#">Imprimir</a>
+      <i class="fa-solid fa-print"></i>
+    </div>
+
     <!--
         El # se utiliza para crear un enlace que no navega a otra página, permitiendo que se ejecute una función de JavaScript en su lugar. 
       <a>href="#" onclick="imprimirPagina(); return false;</a>
