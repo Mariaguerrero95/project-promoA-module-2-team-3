@@ -34,12 +34,17 @@ fieldset {
       a {
         color: black;
         padding-top: 5px;
+        &:hover {
+          cursor: pointer;
+          transform: scale(1.1, 1.1);
+        }
       }
 
       i {
         font-size: 20px;
         
         &:hover {
+          cursor: pointer;
           transform: scale(1.5, 1.5);
         }
       }
