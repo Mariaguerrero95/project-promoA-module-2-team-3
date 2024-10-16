@@ -4,16 +4,21 @@
   gap: 10px;
   height: 20px;
 
+  // &__btn {
+  //   display: flex;
+  //   align-items: flex-end;
+  // }
+
   i {
     padding-bottom: 5px;
   }
 
-  &__buttons {
+  &__anchors {
     display: flex;
     flex-direction: column;
     gap: 10px;
 
-    button {
+    a {
       border-radius: 20px;
       background-color: aqua;
       align-self: flex-start;
