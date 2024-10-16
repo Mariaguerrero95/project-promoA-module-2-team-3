@@ -1,5 +1,24 @@
-* {
-  box-sizing: border-box;
+:root {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+ul{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+}
+// Reseteo los estilos de input
+input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  align-self: flex-start;
+}
+
+// Reseteo los estilos de botón
+button {
+  all: unset;
+  align-self: flex-start;
 }
