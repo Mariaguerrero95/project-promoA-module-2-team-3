@@ -1,4 +1,12 @@
+.fill-form{
+    display: flex;
+    flex-direction: column;
+    
+}
+
 .title-icon{
     display: flex;
-    align-self: center;
+    align-items: center;
+    gap: 10px;
+    height: 20px;
 }
