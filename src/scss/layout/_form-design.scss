@@ -1,12 +1,21 @@
+
+.fieldset{
+    display: flex;
+    align-items: center;
+}
+
 .fill-form{
     display: flex;
     flex-direction: column;
+    align-content: flex-start;
     
 }
 
 .title-icon{
     display: flex;
-    align-items: center;
-    gap: 10px;
-    height: 20px;
+    width: 100%;
+    justify-content: space-between;
+    color: $blueToy;
+
+    
 }
