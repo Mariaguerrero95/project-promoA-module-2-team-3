@@ -5,7 +5,8 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 20px;
+  align-items: center;
+  gap: 5rem;
 
   &__reset {
     width:30%;
@@ -17,39 +18,30 @@
 }
 
 .card {
-  height: 80%;
-  background-color: aqua;
-  border: 1px solid black;
-  border-radius: 8px;
+  height: 15rem;
+  width: 15rem;
+  background-image: url(/images/nubes.jpg);
+  border-radius: 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 30px;
+  gap: 10px;
 
   &__message {
-    width: 50%;
-    background-color: azure;
-    border: 1px solid black;
-    border-radius: 8px;
+    padding: 10px 0 0 10px;
   }
 
   &__img {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 70%;
-    height: 60%;
-    background-color: aquamarine;
-    border: 1px solid black;
-    border-radius: 50%;
-  }
-
-  &__name {
-    width: 50%;
-    background-color: azure;
-    border: 1px solid black;
-    border-radius: 8px;
-  }
-  
+    width: 8rem;
+    height: 8rem;
+    background-image: url(/images/mr-potato.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 20%;
+  }  
 }
