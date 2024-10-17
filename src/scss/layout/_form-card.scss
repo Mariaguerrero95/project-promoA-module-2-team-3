@@ -9,17 +9,21 @@
   gap: 5rem;
 
   &__reset {
-    width:30%;
+    width: 8rem;
     background-color: aqua;
     display: flex;
     align-items: center;
     justify-content: space-around;
+
+    & i {
+      padding-bottom: 5px;
+    }
   }
 }
 
 .card {
   height: 15rem;
-  width: 15rem;
+  width: 12rem;
   background-image: url(/images/nubes.jpg);
   border-radius: 50px;
   display: flex;
