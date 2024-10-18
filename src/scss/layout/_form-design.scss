@@ -1,9 +1,12 @@
 
 .fieldset{
+    width: 80%;
+    
+    
+}
+.fill-form{
     display: flex;
-    align-items: center;
-    
-    
+    flex-direction: column;
 }
 
 
