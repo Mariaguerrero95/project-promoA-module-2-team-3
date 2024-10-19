@@ -1,14 +1,14 @@
 .section-card {
-  height: 100%;
-  width: 50%;
+  margin-top: 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 5rem;
+  gap: 10px;
 
   &__reset {
-    width: 8rem;
+    cursor: pointer;
+    width: 130px;
     background-color: $blueToy;
     color: $yellowToy;
     border-radius: 10px;
@@ -16,7 +16,7 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
-
+    margin-left: 40px;
     & i {
       padding-bottom: 5px;
     }
@@ -24,9 +24,12 @@
 }
 
 .card {
-  height: 15rem;
-  width: 12rem;
+  max-width: 460px;
+  margin: 0 13px;
   background-image: url(/images/nubes.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   border-radius: 50px;
   display: flex;
   flex-direction: column;
@@ -35,25 +38,25 @@
   gap: 10px;
 
   @media (min-width: 768px) {
-    height: 40rem;
-    width: 30rem;
+    max-width: 600px;
   }
 
-  @media (min-width: 1200px) {
-    height: 50rem;
-    width: 40rem;
+  &__nameAddressee {
+    margin-top: 15px;
   }
 
   &__message {
-    padding: 10px 0 0 10px;
+    padding: 10px;
+    margin-bottom: 0;
+    padding-bottom: 0;
   }
 
   &__img {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 8rem;
-    height: 8rem;
+    width: 200px;
+    height: 200px;
     background-image: url(/images/mr-potato.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -61,14 +64,43 @@
     border-radius: 20%;
 
     @media (min-width: 768px) {
-      height: 20rem;
-      width: 20rem;
+      height: 200px;
+      width: 200px;
+    }
+
+    @media (min-width: 970px) {
+      height: 300px;
+      width: 300px;
     }
 
     @media (min-width: 1200px) {
-      height: 25rem;
-      width: 25rem;
+      height: 400px;
+      width: 400px;
     }
+  }
+  &__footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 10px;
+    // width: 80%;
+
+    &__phone {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: smaller;
+      gap: 2px;
+    }
+
+    &__insta {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: smaller;
+      gap: 2px;
+    }
+  }
   
-  }  
-}
+}  
