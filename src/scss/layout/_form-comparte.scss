@@ -32,6 +32,10 @@ fieldset {
       justify-content: space-between;
       display: flex;
       width: 50%;
+
+      @media (min-width: 1200px) {
+        width: 80%;
+      }
       
       a {
         color: $yellowToy;
