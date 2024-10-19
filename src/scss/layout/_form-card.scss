@@ -25,7 +25,7 @@
 
 .card {
   max-width: 460px;
-  margin: 0 40px;
+  margin: 0 13px;
   background-image: url(/images/nubes.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -41,12 +41,11 @@
     max-width: 600px;
   }
 
-  // @media (min-width: 1200px) {
-  //   width: 640px;
-  // }
+  &__nameAddressee {
+    margin-top: 15px;
+  }
 
   &__message {
-    margin: 10px;
     padding: 10px;
     margin-bottom: 0;
     padding-bottom: 0;
@@ -79,7 +78,29 @@
       width: 400px;
     }
   }
-  &__name {
+  &__footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 30px;
     margin-bottom: 10px;
+    // width: 80%;
+
+    &__phone {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: smaller;
+      gap: 2px;
+    }
+
+    &__insta {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: smaller;
+      gap: 2px;
+    }
   }
+  
 }  
