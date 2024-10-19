@@ -1,11 +1,10 @@
 .section-card {
-  height: 100%;
-  width: 50%;
+  margin-top: 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 5rem;
+  gap: 10px;
 
   &__reset {
     cursor: pointer;
