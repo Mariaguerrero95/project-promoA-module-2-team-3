@@ -1,31 +1,31 @@
 header {
     display: flex;
     flex-direction: column;
-    justify-content: flex-end ;
+    justify-content: center;
     align-items: center;
-    height: 300px;
-    
-    .image {
-        width: 40px;
-        align-items: center;
-    }
-    .logo {
-        width: 100%;
-    }
+    margin-top: 150px;
+.logo {
+    width: 40px;
+    justify-content: center;
+}
 
     @media all and (min-width:768px) {
-        height: 500px;
-
+        margin-top: 350px;
+        .logo{
+            width:82px;
+        }
         .image {
-            width: 419px;
+            width: 80px;
         }
     }
 
     @media all and (min-width: 1200px) {       
-    height: 500px;
-
+        margin-top: 350px;
+        .logo{
+            width:100px;
+        }
         .image {
-            width: 419px;
+            width: 84px;
         }
     }
 }
