@@ -1,6 +1,8 @@
 
 .fieldset{
     width: 80%;
+    display: flex;
+    
     
     
 }
@@ -9,16 +11,25 @@
     flex-direction: column;
 }
 
-
-    
-
-
 .title-icon{
     display: flex;
     width: 100%;
     justify-content: space-between;
+    align-items: center;
     color: $blueToy;
-
     
+}
+.image-title{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+
+
+}
+.fa-regular{
+    margin-left: 0;
+    margin-right: 10px;
+
 }
 
