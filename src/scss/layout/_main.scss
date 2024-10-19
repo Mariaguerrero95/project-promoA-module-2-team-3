@@ -1,27 +1,21 @@
 body {
-    background-image: url(../images/malo.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-
-    @media all and (min-width: 768px) {
-        background-size: 100%;
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-image: url(../images/malo.jpg);
+        background-repeat: no-repeat;
         background-size: cover;
-    }
-
-    @media all and (min-width: 1200px) {
-        background-size: 100%;
-        background-size: cover;
-
-    }
+        opacity: 0.5; 
+        z-index: -1; 
 }
-
+}
 main {
-    width: 100%;
     flex-grow: 1;
 }
-
 .actions{
     border-radius: 8px;
 }
@@ -29,27 +23,25 @@ main {
     display: inline-block;
     padding: 10px 20px;
     font-size: 16px;
-    background-color: purple; /* Asegúrate de darle estilo de botón */
+    background-color: $colorBtn; /* Asegúrate de darle estilo de botón */
     color: white;
     border-radius: 15px; /* Aquí se aplican los bordes redondeados */
     padding-bottom: 6px;
+    
 }
 .title-card {
+        color: $blueToy;
         text-align: center;
         font-size: 20px;
-    
-
         @media all and (min-width: 768px) {
             font-size: 24px;
         }
-
         @media all and (min-width: 1200px) {
             font-size: 24px;
-
         }
-
 }
     .subtitle {
+        color: $colorDog;
         font-size: 13px;
         text-align: center;
         font-weight: 50;
@@ -70,14 +62,14 @@ main {
     }
 
 
-.iconos {
+.icons {
+    color: $colorIcons;
     display: flex;
     justify-content: space-around;
     gap: 20px;
     padding: 20px 20px;
     margin: 30px auto;
-    margin-left:55px;
-    width: 268px;
+    width: 230px;
     &__wrapper {
         display: flex;
         flex-direction: column;
@@ -87,6 +79,12 @@ main {
         i {
             font-size: 22px;
         }
+    }
+    @media all and (min-width: 768px) {
+        width: 500px;
+    }
+    @media all and (min-width: 1200px) {
+        width: 500px;
     }
 
 }

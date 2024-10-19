@@ -1,31 +1,41 @@
 <fieldset>
-    <legend class="down-arrow">
-        <i class="fa-regular fa-keyboard"></i>
-        <p>RELLENA</p>
+    <legend class="symbol-title-fill-out">
+        <div class="fill-out-text">
+            <i class="fa-regular fa-keyboard"></i>
+            <p>RELLENA</p>
+        </div>
+
+        <div class="down-arrow">
+            <i class="fa-solid fa-chevron-down"></i>
+          </div>
+
     </legend>
 
-    <div class="fill-out">
+   
+    <div class="fill-out-form">
         <label for="nombre">Nombre completo</label>
-        <input id= "nombre" name= "nombre" type="text" required>
+        <input id= "nombre" class="js-name" name= "nombre" type="text" required>
 
         <label for="text">Quiero decirte que:</label>
-        <input id= "" name= "" type="text" required>
+        <input id= "text" class="js-text" name= "text" type="text" required>
 
-        <label for="imagen">Selecciona una imagen</label>
-        <input id= "imagen" name= "imagen" type="image" required>
+        <div class="photo">
+            <i class="fa-solid fa-camera-retro"></i>
+            <label for="imagen">Selecciona una imagen</label>
+            <input id= "imagen" class="js-image" name= "imagen" type="image" required>
+        </div>
 
+       
+
+        
         <label for="email">Email</label>
-        <input id= "email" name= "email" type="email" required>
+        <input id= "email" class="js-mail" name= "email" type="email" required>
 
         <label for="telefono">Teléfono</label>
-        <input id= "teléfono" name= "telefono" type="text" required>
+        <input id= "teléfono" class="js-number" name= "telefono" type="text" required>
 
         <label for="direccion">Dirección</label>
-        <input id= "direccion" name= "direccion" type="text" required>
-
-        <label for="instagram">Instagram</label>
-        <input id= "instagram" name= "instagram" type="text">
-
+        <input id= "direccion" class="js-address" name= "direccion" type="text" required>
     </div>
 
 </fieldset>
