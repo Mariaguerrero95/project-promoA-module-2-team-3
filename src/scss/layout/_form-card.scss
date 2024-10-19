@@ -25,8 +25,7 @@
 }
 
 .card {
-  height: 15rem;
-  width: 12rem;
+  width: 360px;
   background-image: url(/images/nubes.jpg);
   border-radius: 50px;
   display: flex;
@@ -46,7 +45,10 @@
   }
 
   &__message {
-    padding: 10px 0 0 10px;
+    margin: 10px;
+    padding: 10px;
+    margin-bottom: 0;
+    padding-bottom: 0;
   }
 
   &__img {
@@ -70,6 +72,8 @@
       height: 25rem;
       width: 25rem;
     }
-  
-  }  
-}
+  }
+  &__name {
+    margin-bottom: 10px;
+  }
+}  
