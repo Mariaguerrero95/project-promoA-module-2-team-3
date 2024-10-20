@@ -1,7 +1,7 @@
  
 
 
-const cardDestinatario = document.querySelector (".js-destinatario");
+const cardDestinatario = document.querySelector (".js-card-destinatario");
 const cardText = document.querySelector (".js-text");
 const cardImage = document.querySelector (".js-image");
 const cardRemitente = document.querySelector (".js-remitente");
