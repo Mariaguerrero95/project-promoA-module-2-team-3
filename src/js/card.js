@@ -59,29 +59,3 @@ formRellena.addEventListener ('input', event => {
   preview(event, 'nameSender', cardNameSender);
   preview(event, 'insta', cardInsta);
 });
-
-
-
-
-
-
-
-
-
-
-
-// CON OBJETOS:
-// const cardNames = {
-//   nameAddressee: document.querySelector('.js-card-nameAddressee')
-//   message = document.querySelector('.js-card-message');
-//   img = document.querySelector('.js-card-img');
-//   phone = document.querySelector('.js-card-phone');
-//   sender = document.querySelector('.js-card-nameSender');
-//   insta = document.querySelector('.js-card-insta');
-// }
-//
-// si event.target.id esta en el objeto cardnames
-// 
-// formRellena.addEventListener ('input', event => {
-//   cardNames[event.target.id].innerHTML = event.target.value;
-// }
