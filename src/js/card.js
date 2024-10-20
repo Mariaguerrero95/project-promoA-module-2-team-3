@@ -15,16 +15,14 @@ const cardPhone = document.querySelector('.js-card-phone');
 const cardNameSender = document.querySelector('.js-card-nameSender');
 const cardInsta = document.querySelector('.js-card-insta');
 
-const cardNames = {
-  nameAddressee: document.querySelector('.js-card-nameAddressee')
-}
-
-/* Cuando la usuaria escriba en el input, quiero que se previsualice en el card.
+/* Cuando la usuaria escriba en el input, quiero que se previsualice en el card:
 1. Recoger todos los inputs de rellena
 2. Recoger todos los p de card
 3. Cuando escriba en el input
   - recoger el valor del input
   - poner en el html de card lo que vale el input
+4. Si el id del input es igual a la clase que le hemos dado al <p> de card
+  - pinta en el <p> correspondiente el valor del input correspondiente 
 */
 
 // formRellena.addEventListener ('input', event => {
@@ -51,8 +49,7 @@ function preview (event, idName, cardClass) {
   if (event.target.id === idName) {
     cardClass.innerHTML = event.target.value;
   } 
-}
-
+};
 
 formRellena.addEventListener ('input', event => {
   preview(event, 'nameAddressee', cardNameAddressee);
@@ -65,5 +62,26 @@ formRellena.addEventListener ('input', event => {
 
 
 
-  // if si event.target.id esta en el objeto cardnames
-  // cardNames[event.target.id].innerHTML = event.target.value;
+
+
+
+
+
+
+
+
+// CON OBJETOS:
+// const cardNames = {
+//   nameAddressee: document.querySelector('.js-card-nameAddressee')
+//   message = document.querySelector('.js-card-message');
+//   img = document.querySelector('.js-card-img');
+//   phone = document.querySelector('.js-card-phone');
+//   sender = document.querySelector('.js-card-nameSender');
+//   insta = document.querySelector('.js-card-insta');
+// }
+//
+// si event.target.id esta en el objeto cardnames
+// 
+// formRellena.addEventListener ('input', event => {
+//   cardNames[event.target.id].innerHTML = event.target.value;
+// }
