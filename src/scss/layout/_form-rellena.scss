@@ -24,3 +24,13 @@ fieldset {
     display: flex;
     flex-direction: column;
 }
+
+.instagram {
+    display: flex;
+    flex-direction: column;
+
+    &__text {
+        display: flex;
+        gap:2px
+    }
+}
