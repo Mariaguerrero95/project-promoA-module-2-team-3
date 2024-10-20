@@ -11,7 +11,6 @@
     width: 50%;
   }
 
-
   &__reset {
     cursor: pointer;
     width: 130px;
@@ -44,10 +43,6 @@
   justify-content: center;
   gap: 10px;
 
-  @media (min-width: 768px) {
-    max-width: 600px;
-  }
-
   &__nameAddressee {
     margin-top: 15px;
   }
@@ -68,22 +63,8 @@
     background-size: cover;
     background-position: center;
     border-radius: 20%;
-
-    @media (min-width: 768px) {
-      height: 200px;
-      width: 200px;
-    }
-
-    @media (min-width: 970px) {
-      height: 300px;
-      width: 300px;
-    }
-
-    @media (min-width: 1200px) {
-      height: 400px;
-      width: 400px;
-    }
   }
+  
   &__footer{
     display: flex;
     justify-content: space-around;
