@@ -19,6 +19,9 @@
     align-items: center;
     justify-content: flex-start;
     gap: 20px;
-    min-width: 380px;
+    width: 380px;
+    @media (min-width: 768px) {
+      width: 50%;
+    }
   }
 }

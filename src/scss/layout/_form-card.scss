@@ -7,6 +7,11 @@
   gap: 10px;
   width: 380px;
 
+  @media (min-width: 768px) {
+    width: 50%;
+  }
+
+
   &__reset {
     cursor: pointer;
     width: 130px;
@@ -25,7 +30,8 @@
 }
 
 .card {
-  max-width: 460px;
+  width: 380px;
+  height: 495px;
   margin: 0 13px;
   background-image: url(/images/nubes.jpg);
   background-repeat: no-repeat;
@@ -44,11 +50,6 @@
 
   &__nameAddressee {
     margin-top: 15px;
-    width: 80%;
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    background-color: red;
   }
 
   &__message {
