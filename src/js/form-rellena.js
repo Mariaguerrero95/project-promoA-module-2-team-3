@@ -1,3 +1,4 @@
+// Constantes de rellena
 const formRellena = document.querySelector('.js-fieldset-rellena');
 const inputNameAddressee = document.querySelector('.js-input-nameAddressee');
 const inputMessage = document.querySelector('.js-input-message');

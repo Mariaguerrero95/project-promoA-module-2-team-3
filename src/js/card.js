@@ -6,9 +6,10 @@ const cardPhone = document.querySelector('.js-card-phone');
 const cardNameSender = document.querySelector('.js-card-nameSender');
 const cardInsta = document.querySelector('.js-card-insta');
 
-/* Cuando la usuaria escriba en el input, quiero que se previsualice en el card:
+/* PREVISUALIZACIÓN
+Cuando la usuaria escriba en el input de rellena, quiero que se previsualice en el card:
 1. Recoger todos los inputs de rellena
-2. Recoger todos los p de card
+2. Recoger todos los <p> de card
 3. Cuando escriba en el input
   - recoger el valor del input
   - poner en el html de card lo que vale el input
@@ -16,28 +17,30 @@ const cardInsta = document.querySelector('.js-card-insta');
   - pinta en el <p> correspondiente el valor del input correspondiente 
 */
 
-// formRellena.addEventListener ('input', event => {
-//   console.log('event.target.value es:', event.target.value);
-//   console.log('event.target.id es:', event.target.id);
+/* FORMA 1 DE PREVISUALIZACIÓN
+formRellena.addEventListener ('input', event => {
+  console.log('event.target.value es:', event.target.value);
+  console.log('event.target.id es:', event.target.id);
   
-//   console.log(event.target);
+  console.log(event.target);
 
-//   if (event.target.id === 'nameAddressee') {
-//     cardNameAddressee.innerHTML = event.target.value;
-//   } else if (event.target.id === 'message') {
-//     cardMessage.innerHTML = event.target.value;
-//   } else if (event.target.id === 'img') {
-//     cardImg.innerHTML = event.target.value;
-//   } else if (event.target.id === 'phone') {
-//     cardPhone.innerHTML = event.target.value;
-//   } else if (event.target.id === 'nameSender') {
-//     cardNameSender.innerHTML = event.target.value;
-//   } else if (event.target.id === 'insta') {
-//     cardInsta.innerHTML = event.target.value;
-//   }
-// })
+  if (event.target.id === 'nameAddressee') {
+    cardNameAddressee.innerHTML = event.target.value;
+  } else if (event.target.id === 'message') {
+    cardMessage.innerHTML = event.target.value;
+  } else if (event.target.id === 'img') {
+    cardImg.innerHTML = event.target.value;
+  } else if (event.target.id === 'phone') {
+    cardPhone.innerHTML = event.target.value;
+  } else if (event.target.id === 'nameSender') {
+    cardNameSender.innerHTML = event.target.value;
+  } else if (event.target.id === 'insta') {
+    cardInsta.innerHTML = event.target.value;
+  }
+})
+*/
 
-
+// FORMA 2 DE PREVISUALIZACIÓN
 function preview (event, idName, cardClass) {
   if (event.target.id === idName) {
     cardClass.innerHTML = event.target.value;
