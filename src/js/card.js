@@ -1,12 +1,3 @@
-// Constantes de formRellena
-const formRellena = document.querySelector('.js-fieldset-rellena');
-const inputNameAddressee = document.querySelector('.js-input-nameAddressee');
-const inputMessage = document.querySelector('.js-input-message');
-const inputImg = document.querySelector('.js-input-img');
-const inputPhone = document.querySelector('.js-input-phone');
-const inputNameSender = document.querySelector('.js-input-nameSender');
-const inputInsta = document.querySelector('.js-input-insta');
-
 // Constantes de card
 const cardNameAddressee = document.querySelector('.js-card-nameAddressee');
 const cardMessage = document.querySelector('.js-card-message');
@@ -29,6 +20,8 @@ const cardInsta = document.querySelector('.js-card-insta');
 //   console.log('event.target.value es:', event.target.value);
 //   console.log('event.target.id es:', event.target.id);
   
+//   console.log(event.target);
+
 //   if (event.target.id === 'nameAddressee') {
 //     cardNameAddressee.innerHTML = event.target.value;
 //   } else if (event.target.id === 'message') {
