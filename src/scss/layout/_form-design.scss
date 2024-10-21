@@ -34,8 +34,13 @@
     display:flex;
     align-items: center;
     justify-content: space-between;
+    justify-items: center;
 }
 .photo1{
-    margin-left: 70px;
+    width: 100%;
+}
+.container-image{
+    
+    margin-left: 100px;
 }
 
