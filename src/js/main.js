@@ -1,4 +1,4 @@
-'use strict';
+"use strict";
 
 import "./form-design.js";
 import "./form-rellena.js";
