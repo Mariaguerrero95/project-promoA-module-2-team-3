@@ -1,7 +1,9 @@
 // Constantes de card
+
+const cardFoundImg = document.querySelector('js-card-found-img');
 const cardNameAddressee = document.querySelector('.js-card-nameAddressee');
 const cardMessage = document.querySelector('.js-card-message');
-const cardImg = document.querySelector('.js-card-img');
+const cardPhotoImg = document.querySelector('.js-card-photo-img');
 const cardPhone = document.querySelector('.js-card-phone');
 const cardNameSender = document.querySelector('.js-card-nameSender');
 const cardInsta = document.querySelector('.js-card-insta');
@@ -29,7 +31,7 @@ formRellena.addEventListener ('input', event => {
   } else if (event.target.id === 'message') {
     cardMessage.innerHTML = event.target.value;
   } else if (event.target.id === 'img') {
-    cardImg.innerHTML = event.target.value;
+    cardPhotoImg.innerHTML = event.target.value;
   } else if (event.target.id === 'phone') {
     cardPhone.innerHTML = event.target.value;
   } else if (event.target.id === 'nameSender') {
@@ -50,7 +52,7 @@ function preview (event, idName, cardClass) {
 formRellena.addEventListener ('input', event => {
   preview(event, 'nameAddressee', cardNameAddressee);
   preview(event, 'message', cardMessage);
-  preview(event, 'img', cardImg);
+  preview(event, 'img', cardPhotoImg);
   preview(event, 'phone', cardPhone);
   preview(event, 'nameSender', cardNameSender);
   preview(event, 'insta', cardInsta);

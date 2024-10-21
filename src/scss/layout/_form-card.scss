@@ -32,16 +32,24 @@
   width: 380px;
   height: 495px;
   margin: 0 13px;
-  background-image: url(/images/nubes.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  border-radius: 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 10px;
+
+  &__found{
+    position: absolute;
+    z-index: -1;
+    width: 380px;
+    height: 495px;
+    
+    &__img {
+      width: 100%;
+      height: 100%;
+      border-radius: 50px;
+    }
+  }
 
   &__nameAddressee {
     margin-top: 15px;
@@ -52,17 +60,15 @@
     width: 80%;
   }
 
-  &__img {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  &__photo {
     width: 200px;
     height: 200px;
-    background-image: url(/images/mr-potato.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    border-radius: 20%;
+
+    &__img {
+      width: 100%;
+      height: 100%;
+      border-radius: 20%;      
+    }
   }
   
   &__footer{
@@ -89,5 +95,4 @@
       gap: 2px;
     }
   }
-  
 }  
