@@ -13,6 +13,19 @@ const card1 = document.querySelector(".js-card");
 //     card1.classList.toggle ("card-background-blue");
 
 // })
+/*Crear una función que reciba qué casilla se marca, desmarque las demás y pinte la clase correspondiente a esa casilla en el fondo de la tarjeta
+Si marca el fondo azul
+    se pinta el azul
+Si marca el fondo amarillo
+    se pinta el amarillo
+Si marca el verde
+    se pinta el verde
+PASOS
+- selecciono los elementos html
+- Cuando la usuaria haga click en formulario
+*/
+
+
 fieldset.addEventListener("click", (event) =>{
     console.log("event");
     if (event.target.id === "option1"){
@@ -31,6 +44,30 @@ fieldset.addEventListener("click", (event) =>{
 
     }    
 })
+
+/*Cuando la usuaria haga click en el curso hacia abajo,se despliega el menú
+  Cuando le vuelva a pulsar hacia arriba, el menu vuelve a plegarse.
+  PASOS:
+  - Selecciono los elementos html: legend (icono) y el div (menú)
+  - crear evento para escuchar el click
+*/
+
+const legendDesign = document.querySelector(".js-legend-design");
+const formDesign = document.querySelector(".js-form-design");
+const arrowDesign = document.querySelector (".js-arrow");
+
+legendDesign.addEventListener("click", collapse) 
+
+    function collapse (){
+
+        formDesign.classList.toggle ("form-collapse")
+        arrowDesign.classList.toggle ("form-rotate")
+            
+    }
+   
+       
+
+
 
 
 
