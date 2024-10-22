@@ -16,15 +16,22 @@ const card1 = document.querySelector(".js-card");
 fieldset.addEventListener("click", (event) =>{
     console.log("event");
     if (event.target.id === "option1"){
-        card1.classList.toggle("card-background-blue");
+        card1.classList.add("card-background-blue");
+        card1.classList.remove("card-background-yellow");
+        card1.classList.remove ("card-background-green");
         
     } else if (event.target.id === "option2"){
-        card1.classList.toggle ("card-background-yellow");
+        card1.classList.add ("card-background-yellow");
+        card1.classList.remove("card-background-blue");
+        card1.classList.remove ("card-background-green");
     } else if ( event.target.id === "option3"){
-        card1.classList.toggle ("card-background-green");
+        card1.classList.add ("card-background-green");
+        card1.classList.remove("card-background-yellow");
+        card1.classList.remove ("card-background-blue");
 
     }    
 })
+
 
 
 
