@@ -1,46 +1,25 @@
-
-.fieldset{
-    width: 80%;
-    display: flex;
-        
+.fieldset {
+  width: 80%;
+  display: flex;
 }
-.fill-form{
-    display: flex;
-    flex-direction: column;
+.fill-form {
+  display: flex;
+  flex-direction: column;
 }
 
-.title-icon{
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    align-items: center;
-    color: $blueToy;
-    
+.title-icon {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  color: $blueToy;
 }
-.image-title{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    
-
-
+.image-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
-.fa-regular{
-    margin-left: 0;
-    margin-right: 10px;
-
+.fa-regular {
+  margin-left: 0;
+  margin-right: 10px;
 }
-.fondo-nubes{
-    display:flex;
-    align-items: center;
-    justify-content: space-between;
-    justify-items: center;
-}
-.photo1{
-    width: 100%;
-}
-.container-image{
-    
-    margin-left: 100px;
-}
-

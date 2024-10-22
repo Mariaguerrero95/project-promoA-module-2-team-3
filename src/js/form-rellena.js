@@ -1,9 +1,8 @@
-// const inputDestinatario = document.querySelector (".js-destinatario");
-// const inputText = document.querySelector (".js-text");
-// const inputImage = document.querySelector (".js-image");
-// const inputRemitente = document.querySelector (".js-remitente");
-// const inputInstagram = document.querySelector (".js-instagram");
-// const inputTelefono = document.querySelector (".js-number");
-// const fieldset = document.querySelector (".js-fieldset-rellena");
-
-
+// Constantes de rellena
+const formRellena = document.querySelector(".js-fieldset-rellena");
+const inputNameAddressee = document.querySelector(".js-input-nameAddressee");
+const inputMessage = document.querySelector(".js-input-message");
+const inputImg = document.querySelector(".js-input-img");
+const inputPhone = document.querySelector(".js-input-phone");
+const inputNameSender = document.querySelector(".js-input-nameSender");
+const inputInsta = document.querySelector(".js-input-insta");

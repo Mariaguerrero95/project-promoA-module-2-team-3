@@ -3,14 +3,10 @@
   flex-direction: column;
   align-items: center;
   margin: 80px 0;
-  
+
   @media (min-width: 768px) {
     flex-direction: row;
     justify-content: space-around;
-  }
-
-  @media (min-width: 1200px) {
-    font-size: x-large;
   }
 
   &__form {
@@ -19,6 +15,9 @@
     align-items: center;
     justify-content: flex-start;
     gap: 20px;
-    min-width: 380px;
+    width: 380px;
+    @media (min-width: 768px) {
+      width: 40%;
+    }
   }
 }

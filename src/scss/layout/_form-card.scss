@@ -5,6 +5,11 @@
   justify-content: center;
   align-items: center;
   gap: 10px;
+  width: 380px;
+
+  @media (min-width: 768px) {
+    width: 50%;
+  }
 
   &__reset {
     cursor: pointer;
@@ -24,21 +29,26 @@
 }
 
 .card {
-  max-width: 460px;
+  width: 380px;
+  height: 495px;
   margin: 0 13px;
-  background-image: url(/images/nubes.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  border-radius: 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 10px;
 
-  @media (min-width: 768px) {
-    max-width: 600px;
+  &__found {
+    position: absolute;
+    z-index: -1;
+    width: 380px;
+    height: 495px;
+
+    &__img {
+      width: 100%;
+      height: 100%;
+      border-radius: 50px;
+    }
   }
 
   &__nameAddressee {
@@ -46,45 +56,28 @@
   }
 
   &__message {
-    padding: 10px;
-    margin-bottom: 0;
-    padding-bottom: 0;
+    padding: 0 10px;
+    width: 80%;
   }
 
-  &__img {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  &__photo {
     width: 200px;
     height: 200px;
-    background-image: url(/images/mr-potato.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    border-radius: 20%;
 
-    @media (min-width: 768px) {
-      height: 200px;
-      width: 200px;
-    }
-
-    @media (min-width: 970px) {
-      height: 300px;
-      width: 300px;
-    }
-
-    @media (min-width: 1200px) {
-      height: 400px;
-      width: 400px;
+    &__img {
+      width: 100%;
+      height: 100%;
+      border-radius: 20%;
     }
   }
-  &__footer{
+
+  &__footer {
     display: flex;
     justify-content: space-around;
     align-items: center;
     gap: 30px;
     margin-bottom: 10px;
-    // width: 80%;
+    width: 90%;
 
     &__phone {
       display: flex;
@@ -102,5 +95,4 @@
       gap: 2px;
     }
   }
-  
-}  
+}

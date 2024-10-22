@@ -1,31 +1,31 @@
 header {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 150px;
-.logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 150px;
+  .logo {
     width: 40px;
     justify-content: center;
-}
+  }
 
-    @media all and (min-width:768px) {
-        margin-top: 350px;
-        .logo{
-            width:82px;
-        }
-        .image {
-            width: 80px;
-        }
+  @media all and (min-width: 768px) {
+    margin-top: 350px;
+    .logo {
+      width: 82px;
     }
+    .image {
+      width: 80px;
+    }
+  }
 
-    @media all and (min-width: 1200px) {       
-        margin-top: 350px;
-        .logo{
-            width:100px;
-        }
-        .image {
-            width: 84px;
-        }
+  @media all and (min-width: 1200px) {
+    margin-top: 350px;
+    .logo {
+      width: 100px;
     }
+    .image {
+      width: 84px;
+    }
+  }
 }
