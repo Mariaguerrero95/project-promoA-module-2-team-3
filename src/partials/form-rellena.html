@@ -10,51 +10,64 @@
     </div>
   </legend>
 
-  <div class="fill-out-form">
-    <label for="nameAddressee">Destinatario</label>
-    <input
-      id="nameAddressee"
-      class="js-input-nameAddressee"
-      name="nameAddressee"
-      type="text"
-      required
-    />
-
-    <label for="message">Quiero decirte que:</label>
-    <input
-      id="message"
-      class="js-input-message"
-      name="message"
-      type="text"
-      maxlength="220"
-      required
-    />
-
-    <div class="photo">
-      <i class="fa-solid fa-camera-retro"></i>
-      <label for="img">Selecciona una imagen</label>
-      <input id="img" class="js-input-img" name="img" type="image" required />
+  <div class="fillout-form">
+    <div class="fillout-form_input">
+      <label for="nameAddressee">Destinatario</label>
+      <input
+        id="nameAddressee"
+        class="js-input-nameAddressee"
+        name="nameAddressee"
+        type="text"
+        required
+      />
+    </div>
+    <div class="fillout-form_input">
+      <label for="message">Quiero decirte que:</label>
+      <input
+        id="message"
+        class="js-input-message"
+        name="message"
+        type="text"
+        maxlength="220"
+        required
+      />
     </div>
 
-    <label for="phone">Teléfono</label>
-    <input
-      id="phone"
-      class="js-input-phone"
-      name="phone"
-      type="text"
-      required
-    />
+    <div class="photo fillout-form_input">
+      <div class="fillout-form_input-icono">
+        <i class="fa-solid fa-camera-retro"></i>
+        <label class="form__photolabel" for="photo">Selecciona una imagen</label>
+      </div>
+      <div class="fillout-form_input__button">
+        <label for="photo" class="form__photobutton">Añadir imagen</label>
+        <input id="photo" class="form__photoinput js__profile-upload-btn" name="photo" type="file" required/>
+        <span class="js__profile-image form__photothumb"></span>
+      </div>
+    </div>
 
-    <label for="nameSender">Remitente</label>
-    <input
-      id="nameSender"
-      class="js-input-nameSender"
-      name="nameSender"
-      type="text"
-      required
-    />
+    <div class="fillout-form_input">
+      <label for="phone">Teléfono</label>
+      <input
+        id="phone"
+        class="js-input-phone"
+        name="phone"
+        type="text"
+        required
+      />
+    </div>
 
-    <div class="instagram">
+    <div class="fillout-form_input">
+      <label for="nameSender">Remitente</label>
+      <input
+        id="nameSender"
+        class="js-input-nameSender"
+        name="nameSender"
+        type="text"
+        required
+      />
+    </div>
+
+    <div class="fillout-form_input">
       <div class="instagram__text">
         <i class="fa-brands fa-instagram"></i>
         <label for="insta">Instagram</label>

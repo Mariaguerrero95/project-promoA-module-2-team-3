@@ -23,14 +23,38 @@ fieldset {
 .fill-out-form {
   display: flex;
   flex-direction: column;
+  gap: 10px;
 }
 
-.instagram {
+.fillout-form_input {
   display: flex;
   flex-direction: column;
 
-  &__text {
-    display: flex;
-    gap: 2px;
-  }
+    &__text {
+      display: flex;
+      gap: 2px;
+    }
+    &__button {
+      display: flex;
+      gap: 15px;
+      align-items: center;
+    }
+}
+.form__photoinput{
+  display:none;
+}
+
+.form__photobutton{
+  background-color: $redToy;
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+  width: 115px;
+  margin-bottom: 5px;
+}
+.form__photothumb{
+  border: 1px solid red;
+  border-radius: 5px;
+  height: 40px;
+  width: 40px;
 }
