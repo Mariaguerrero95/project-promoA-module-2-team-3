@@ -23,3 +23,18 @@
   margin-left: 0;
   margin-right: 10px;
 }
+.card-background-blue{
+    background-color: $blueToy;
+}
+.card-background-yellow{
+    background-color: #f7d101;
+}
+.card-background-green {
+    background-color: rgb(37, 183, 37);
+}
+.form-collapse{
+  display: none;
+}
+.form-rotate{
+  transform: rotate(180deg);
+}
