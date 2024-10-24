@@ -20,28 +20,32 @@ fieldset {
   align-items: center;
 }
 
-.fill-out-form {
+.fillout-form {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 20px;
 }
 
 .fillout-form_input {
   display: flex;
   flex-direction: column;
+  gap: 5px;
 
-    &__text {
-      display: flex;
-      gap: 2px;
-    }
     &__button {
       display: flex;
-      gap: 15px;
+      margin-right: 30px;
       align-items: center;
+      gap: 80px;
     }
 
     & textarea {
-      width: 180px;
+      width: 190px;
+      border-radius: 10px;
+      padding: 10px;
+    }
+    & input {
+      border-radius: 10px;
+      padding: 10px;
     }
     }
 
@@ -51,15 +55,14 @@ fieldset {
 
 .form__photobutton{
   background-color: $redToy;
-  color: white;
-  padding: 5px;
+  color: $yellowToy;
+  padding: 10px 20px 8px 20px;
   border-radius: 5px;
-  width: 115px;
-  margin-bottom: 5px;
 }
 .form__photothumb{
   border: 1px solid red;
   border-radius: 5px;
   height: 40px;
   width: 40px;
+  background-size: cover;
 }
