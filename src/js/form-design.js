@@ -7,7 +7,7 @@ const fieldset = document.querySelector(".js-fieldset-diseña");
 const background1 = document.querySelector(".js-azul");
 const background2 = document.querySelector(".js-amarillo");
 const background3 = document.querySelector (".js-verde");
-const card1 = document.querySelector(".js-card");
+const card1 = document.querySelector(".js-card-found-img");
 
 // background1.addEventListener("click", () => {
 //     card1.classList.toggle ("card-background-blue");
