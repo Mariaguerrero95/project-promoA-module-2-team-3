@@ -1,0 +1,75 @@
+fieldset {
+  width: 80%;
+}
+.symbol-title-fill-out {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  color: $blueToy;
+}
+
+.fill-out-text {
+  display: flex;
+  align-items: baseline;
+  gap: 15px;
+}
+
+.down-arrow {
+  display: flex;
+  align-items: center;
+}
+
+.fillout-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.fillout-form_input {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+
+    &__button {
+      display: flex;
+      margin-right: 30px;
+      align-items: center;
+      gap: 80px;
+    }
+
+    & textarea {
+      width: 190px;
+      border-radius: 10px;
+      padding: 10px;
+    }
+    & input {
+      border-radius: 10px;
+      padding: 10px;
+    }
+    }
+
+.form__photoinput{
+  display:none;
+}
+
+.form__photobutton{
+  background-color: $redToy;
+  color: $yellowToy;
+  padding: 10px 20px 8px 20px;
+  border-radius: 5px;
+}
+.form__photothumb{
+  border: 1px solid red;
+  border-radius: 5px;
+  height: 40px;
+  width: 40px;
+  background-size: cover;
+}
+
+.collapse {
+  display: none;
+}
+.rotate {
+  transform: rotate(180deg);
+}

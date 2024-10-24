@@ -1,0 +1,40 @@
+.fieldset {
+  width: 80%;
+  display: flex;
+}
+.fill-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.title-icon {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  color: $blueToy;
+}
+.image-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.fa-regular {
+  margin-left: 0;
+  margin-right: 10px;
+}
+.card-background-blue{
+    background-color: $blueToy;
+}
+.card-background-yellow{
+    background-color: #f7d101;
+}
+.card-background-green {
+    background-color: rgb(37, 183, 37);
+}
+.form-collapse{
+  display: none;
+}
+.form-rotate{
+  transform: rotate(180deg);
+}

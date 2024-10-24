@@ -1,19 +1,19 @@
 :root {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
-ul{
+ul {
   list-style: none;
 }
-a{
+a {
   text-decoration: none;
 }
 // Reseteo los estilos de input
 input {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
+  align-self: flex-start;
+}
+textarea {
   align-self: flex-start;
 }
 

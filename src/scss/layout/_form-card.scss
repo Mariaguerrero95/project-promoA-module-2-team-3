@@ -1,0 +1,103 @@
+.section-card {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 380px;
+
+  @media (min-width: 768px) {
+    width: 50%;
+  }
+
+  &__reset {
+    cursor: pointer;
+    width: 130px;
+    background-color: $blueToy;
+    color: $yellowToy;
+    border-radius: 10px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-left: 40px;
+
+    & i {
+      padding-bottom: 5px;
+    }
+  }
+}
+
+.card {
+  width: 380px;
+  height: 495px;
+  margin: 0 13px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  &__found {
+    position: absolute;
+    z-index: -1;
+    width: 380px;
+    height: 495px;
+
+    &__img {
+      width: 100%;
+      height: 100%;
+      border-radius: 50px;
+    }
+  }
+
+  &__nameAddressee {
+    margin-top: 15px;
+  }
+
+  &__message {
+    padding: 0 10px;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__photo {
+    width: 200px;
+    height: 200px;
+
+    &__img {
+      width: 100%;
+      height: 100%;
+      border-radius: 20%;
+      background-image: url('/images/mr-potato.png');
+      background-size: cover;
+    }
+  }
+
+  &__footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 10px;
+    width: 90%;
+
+    &__phone {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: smaller;
+      gap: 2px;
+    }
+
+    &__insta {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: smaller;
+      gap: 2px;
+    }
+  }
+}

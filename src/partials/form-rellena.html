@@ -1,0 +1,90 @@
+<fieldset class="js-fieldset-rellena">
+  <legend class="symbol-title-fill-out js-legend-fillout">
+    <div class="fill-out-text">
+      <i class="fa-regular fa-keyboard"></i>
+      <p>RELLENA</p>
+    </div>
+
+    <div class="down-arrow js-arrow-fillout">
+      <i class="fa-solid fa-chevron-down"></i>
+    </div>
+  </legend>
+
+  <div class="fillout-form js-form-fillout">
+    <div class="fillout-form_input">
+      <label for="nameAddressee">Destinatario</label>
+      <input
+        id="nameAddressee"
+        class="js-input-nameAddressee"
+        name="nameAddressee"
+        type="text"
+        placeholder="To: Buddy"
+        required
+      />
+    </div>
+    <div class="fillout-form_input">
+      <label for="message">Quiero decirte que:</label>
+      <textarea id="message"
+        class="js-input-message"
+        name="message"
+        type="text"
+        required
+        placeholder="Te voy a echar mucho de menos"
+        >
+      </textarea>
+    </div>
+
+    <div class="fillout-form_input">
+      <div class="fillout-form_input-icono">
+        <i class="fa-solid fa-camera-retro"></i>
+        <label class="form__photolabel" for="photo">Selecciona una imagen</label>
+      </div>
+      <div class="fillout-form_input__button">
+        <label for="photo" class="form__photobutton">Añadir imagen</label>
+        <input id="photo" class="form__photoinput js__profile-upload-btn" name="photo" type="file" required/>
+        <span class="js__profile-image form__photothumb"></span>
+      </div>
+    </div>
+
+    <div class="fillout-form_input">
+      <label for="phone">Teléfono</label>
+      <input
+        id="phone"
+        class="fillout-form_input__phone js-input-phone"
+        name="phone"
+        type="text"
+        pattern="[0-9]"
+        maxlength="9"
+        placeholder="612345678"
+        required
+      />
+    </div>
+
+    <div class="fillout-form_input">
+      <label for="nameSender">Remitente</label>
+      <input
+        id="nameSender"
+        class="js-input-nameSender"
+        name="nameSender"
+        type="text"
+        placeholder="Mr. Potato"
+        required
+      />
+    </div>
+
+    <div class="fillout-form_input">
+      <div>
+        <i class="fa-brands fa-instagram"></i>
+        <label for="insta">Instagram</label>
+      </div>
+      <input
+        id="insta"
+        class="js-input-insta"
+        name="insta"
+        type="text"
+        placeholder="@mrpotato"
+        required
+      />
+    </div>
+  </div>
+</fieldset>
