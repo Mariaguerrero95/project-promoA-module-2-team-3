@@ -18,19 +18,22 @@
         class="js-input-nameAddressee"
         name="nameAddressee"
         type="text"
+        placeholder="To: Buddy"
         required
       />
     </div>
     <div class="fillout-form_input">
       <label for="message">Quiero decirte que:</label>
-      <input
-        id="message"
+      <textarea id="message"
         class="js-input-message"
         name="message"
         type="text"
-        maxlength="220"
+        rows="3"
         required
-      />
+        placeholder="Te voy a echar mucho de menos"
+        >
+        
+      </textarea>
     </div>
 
     <div class="photo fillout-form_input">
@@ -49,9 +52,12 @@
       <label for="phone">Teléfono</label>
       <input
         id="phone"
-        class="js-input-phone"
+        class="fillout-form_input__phone js-input-phone"
         name="phone"
         type="text"
+        pattern="[0-9]"
+        maxlength="9"
+        placeholder="612345678"
         required
       />
     </div>

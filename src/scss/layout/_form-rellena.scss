@@ -39,7 +39,12 @@ fieldset {
       gap: 15px;
       align-items: center;
     }
-}
+
+    & textarea {
+      width: 180px;
+    }
+    }
+
 .form__photoinput{
   display:none;
 }
