@@ -1,6 +1,6 @@
 "use strict";
 
-const formContainer = document.querySelector(".div-container__form");
+const formContainer = document.querySelector(".js-div-container__form");
 
 
 import "./form-design.js";
