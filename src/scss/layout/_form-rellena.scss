@@ -1,7 +1,7 @@
 fieldset {
   width: 80%;
 }
-.symbol-title-fillout {
+.symbol-title-fill-out {
   display: flex;
   width: 100%;
   justify-content: space-between;
@@ -9,7 +9,7 @@ fieldset {
   color: $blueToy;
 }
 
-.fillout-text {
+.fill-out-text {
   display: flex;
   align-items: baseline;
   gap: 15px;
@@ -67,7 +67,6 @@ fieldset {
 .collapse {
   display: none;
 }
-
 .rotate {
   transform: rotate(180deg);
 }
