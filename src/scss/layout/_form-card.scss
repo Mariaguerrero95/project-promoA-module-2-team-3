@@ -58,6 +58,8 @@
   &__message {
     padding: 0 10px;
     width: 80%;
+    display: flex;
+    justify-content: center;
   }
 
   &__photo {
