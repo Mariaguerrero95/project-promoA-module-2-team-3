@@ -24,13 +24,16 @@
   margin-right: 10px;
 }
 .card-background-blue{
-    background-color: $blueToy;
+    background-image: url("/images/fondo1.jpg");
+    background-size: cover;
 }
 .card-background-yellow{
-    background-color: #f7d101;
+  background-image: url("/images/fondo5.avif");
+  background-size: cover;
 }
 .card-background-green {
-    background-color: rgb(37, 183, 37);
+  background-image: url("/images/fondo3.jpg");
+  background-size: cover;
 }
 .form-collapse{
   display: none;
