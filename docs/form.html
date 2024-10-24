@@ -1,41 +1,267 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Formulario</title>
     <!-- Letra googleFonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap"
+      rel="stylesheet"
+    />
     <!-- Iconos Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
 
     
-  <link rel="stylesheet" href="./assets/main-4df44ab3.css">
-</head>
-<body>
-    <form action="">
-        <fieldset>
-  <legend class="drop-down-share">
-    <i class="fa-solid fa-share-nodes"></i>
-    <p>Comparte</p>
+    <link rel="stylesheet" href="./assets/main-81f6d437.css">
+  </head>
+  <body>
+    <div class="div-container">
+      <form class="div-container__form" action="">
+        <fieldset class="fieldset js-fieldset-diseña">
+  <legend class="title-icon js-legend-design">
+    <div class="image-title">
+      <i class="fa-regular fa-object-ungroup"></i>
+      <p>Diseña</p>
+    </div>
+    <div class="js-arrow">
+      <i class="fa-solid fa-chevron-down"></i>
+    </div>
   </legend>
-  <div class="drop-down-share__buttons">
-    <button>Por e-mail</button>
-    <button>Por instagram</button>
-    <button>Por WhatsApp</button>
-    <button>Imprimir</button>
+  <div>
+    <div class="fill-form js-form-design">
+      <label for="option1">
+        <input class="js-azul"
+          id="option1"
+          type="radio"
+          value="choosecolor"
+          name="background"
+        />
+        Fondo azul
+      </label>
+      <label for="option2">
+        <input class="js-amarillo"
+          id="option2"
+          type="radio"
+          value="choosecolor"
+          name="background"
+        />
+        Fondo amarillo
+      </label>
+      <label for="option3">
+        <input class="js-verde"
+          id="option3"
+          type="radio"
+          value="choosecolor"
+          name="background"
+        />
+        Fondo verde
+      </label>
+    </div>
   </div>
 </fieldset>
-    </form>
-    <footer class="footer">
-    <div class="foot">
-        <p class="name">Hasta el infinito © 2024</p>
-        <img class="image1" src="../public/images/Hasta el infinito.png"/>
+
+        <fieldset class="js-fieldset-rellena">
+  <legend class="symbol-title-fill-out js-legend-fillout">
+    <div class="fill-out-text">
+      <i class="fa-regular fa-keyboard"></i>
+      <p>RELLENA</p>
     </div>
+
+    <div class="down-arrow js-arrow-fillout">
+      <i class="fa-solid fa-chevron-down"></i>
+    </div>
+  </legend>
+
+  <div class="fillout-form js-form-fillout">
+    <div class="fillout-form_input">
+      <label for="nameAddressee">Destinatario</label>
+      <input
+        id="nameAddressee"
+        class="js-input-nameAddressee"
+        name="nameAddressee"
+        type="text"
+        placeholder="To: Buddy"
+        required
+      />
+    </div>
+    <div class="fillout-form_input">
+      <label for="message">Quiero decirte que:</label>
+      <textarea id="message"
+        class="js-input-message"
+        name="message"
+        type="text"
+        required
+        placeholder="Te voy a echar mucho de menos"
+        >
+      </textarea>
+    </div>
+
+    <div class="fillout-form_input">
+      <div class="fillout-form_input-icono">
+        <i class="fa-solid fa-camera-retro"></i>
+        <label class="form__photolabel" for="photo">Selecciona una imagen</label>
+      </div>
+      <div class="fillout-form_input__button">
+        <label for="photo" class="form__photobutton">Añadir imagen</label>
+        <input id="photo" class="form__photoinput js__profile-upload-btn" name="photo" type="file" required/>
+        <span class="js__profile-image form__photothumb"></span>
+      </div>
+    </div>
+
+    <div class="fillout-form_input">
+      <label for="phone">Teléfono</label>
+      <input
+        id="phone"
+        class="fillout-form_input__phone js-input-phone"
+        name="phone"
+        type="text"
+        pattern="[0-9]"
+        maxlength="9"
+        placeholder="612345678"
+        required
+      />
+    </div>
+
+    <div class="fillout-form_input">
+      <label for="nameSender">Remitente</label>
+      <input
+        id="nameSender"
+        class="js-input-nameSender"
+        name="nameSender"
+        type="text"
+        placeholder="Mr. Potato"
+        required
+      />
+    </div>
+
+    <div class="fillout-form_input">
+      <div>
+        <i class="fa-brands fa-instagram"></i>
+        <label for="insta">Instagram</label>
+      </div>
+      <input
+        id="insta"
+        class="js-input-insta"
+        name="insta"
+        type="text"
+        placeholder="@mrpotato"
+        required
+      />
+    </div>
+  </div>
+</fieldset>
+
+        <fieldset>
+  <legend class="drop-down-share js-legend-share">
+    <div class="drop-down-share__text">
+      <i class="fa-solid fa-share-nodes"></i>
+      <p>Comparte</p>
+    </div>
+
+    <div class="drop-down-share__btn js-icon-arrow-share">
+      <i class="fa-solid fa-chevron-down"></i>
+    </div>
+  </legend>
+  <div class="drop-down-share__anchors js-form-share">
+    <div class="anchors__icon">
+      <a href="mailto:">Por e-mail</a>
+      <a href="mailto:"> <i class="fa-regular fa-envelope"></i></a>
+    </div>
+
+    <div class="anchors__icon">
+      <a href="https://www.instagram.com/" target="_blank" noreferrer
+        >Por instagram</a
+      >
+      <a href="https://www.instagram.com/" target="_blank" noreferrer
+        ><i class="fa-brands fa-instagram"></i
+      ></a>
+    </div>
+
+    <div class="anchors__icon">
+      <a href="https://web.whatsapp.com/" target="_blank" noreferrer
+        >Por WhatsApp</a
+      >
+      <a href="https://web.whatsapp.com/" target="_blank" noreferrer
+        ><i class="fa-brands fa-whatsapp"></i
+      ></a>
+    </div>
+
+    <div class="anchors__icon">
+      <a href="#">Imprimir</a>
+      <a href="#"><i class="fa-solid fa-print"></i></a>
+    </div>
+
+    <!--
+        El # se utiliza para crear un enlace que no navega a otra página, permitiendo que se ejecute una función de JavaScript en su lugar. 
+      <a>href="#" onclick="imprimirPagina(); return false;</a>
+      <script>
+          function imprimirPagina() {
+              window.print();
+          }
+      </script>
+    -->
+  </div>
+</fieldset>
+
+      </form>
+      <section class="section-card js-card" >
+  <button class="section-card__reset js-button-reset" type="reset">
+    RESET
+    <i class="fa-solid fa-trash-can"></i>
+  </button>
+  <div class="card">
+    <div class="card__found">
+      <img
+        class="card__found__img js-card-found-img"
+        src="./images/nubes.jpg"
+        alt="nubes blancas con cielo azul"
+      />
+    </div>
+
+    <div class="card__nameAddressee">
+      <p class="js-card-nameAddressee">To: Buddy</p>
+    </div>
+
+    <div class="card__message">
+      <p class="js-card-message">
+        Te voy a echar mucho de menos
+      </p>
+    </div>
+
+    <div class="card__photo js__profile-preview">
+      <div class="card__photo__img js-card-photo-img">
+      </div>
+    </div>
+
+    <div class="card__footer">
+      <div class="card__footer__phone">
+        <i class="fa-solid fa-phone"></i>
+        <p class="js-card-phone">612345678</p>
+      </div>
+      <div class="card__footer__nameSender">
+        <p class="js-card-nameSender">Mr. Potato</p>
+      </div>
+      <div class="card__footer__insta">
+        <i class="fa-brands fa-instagram"></i>
+        <p class="js-card-insta">@mrpotato</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+    </div>
+    <footer class="footer">
+  <div class="foot">
+    <p class="name">Hasta el infinito © 2024</p>
+  </div>
 </footer>
-    <script src="./js/main.js"></script>
-</body>
+
+    <script type="text/javascript" src="./js/main.js"></script>
+  </body>
 </html>
