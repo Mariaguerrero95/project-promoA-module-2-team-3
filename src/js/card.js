@@ -1,12 +1,17 @@
 // Constantes de card
 
-const cardFoundImg = document.querySelector("js-card-found-img");
+const cardContainer = document.querySelector(".js-card");
+const cardFoundImg = document.querySelector(".js-card-found-img");
 const cardNameAddressee = document.querySelector(".js-card-nameAddressee");
 const cardMessage = document.querySelector(".js-card-message");
 const cardPhotoImg = document.querySelector(".js-card-photo-img");
 const cardPhone = document.querySelector(".js-card-phone");
 const cardNameSender = document.querySelector(".js-card-nameSender");
 const cardInsta = document.querySelector(".js-card-insta");
+const cardButtonReset = document.querySelector(".js-button-reset");
+
+
+
 
 /* PREVISUALIZACIÓN
 Cuando la usuaria escriba en el input de rellena, quiero que se previsualice en el card:
@@ -57,3 +62,17 @@ formRellena.addEventListener("input", (event) => {
   preview(event, "nameSender", cardNameSender);
   preview(event, "insta", cardInsta);
 });
+
+
+// FUNCIONALIDAD DEL BOTÓN RESET (está fuera del form y hay que enlazarlo)
+function resetForm() {
+  console.log('hago click en reset')
+  formContainer.reset();
+  console.log('reseteo form')
+  // location.reload();
+  // console.log('reseteo card')
+}
+
+cardButtonReset.addEventListener("click", resetForm);
+
+
