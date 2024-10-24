@@ -63,3 +63,11 @@ fieldset {
   height: 40px;
   width: 40px;
 }
+
+.collapse {
+  display: none;
+}
+
+.rotate {
+  transform: rotate(180deg);
+}

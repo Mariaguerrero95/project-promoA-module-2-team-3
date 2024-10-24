@@ -11,12 +11,12 @@ const legendFillOut = document.querySelector(".js-legend-fillout");
 const arrowFillOut = document.querySelector(".js-arrow-fillout");
 const formFillOut = document.querySelector(".js-form-fillout");
 
-legendShare.addEventListener("click", dropDown);
+legendFillOut.addEventListener("click", dropDown);
 
 function dropDown() {
   formFillOut.classList.toggle("collapse");
 
   arrowFillOut.classList.toggle("rotate");
-  console.log("clase rotate");
+
 }
 
