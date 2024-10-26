@@ -65,7 +65,7 @@ formRellena.addEventListener("input", (event) => {
 
 
 // FUNCIONALIDAD DEL BOTÓN RESET (está fuera del form y hay que enlazarlo)
-function resetForm() {
+/*function resetForm() {
   console.log('hago click en reset')
   formContainer.reset();
   console.log('reseteo form')
@@ -73,6 +73,37 @@ function resetForm() {
   // console.log('reseteo card')
 }
 
-cardButtonReset.addEventListener("click", resetForm);
+cardButtonReset.addEventListener("click", resetForm);*/
 
+const defaultImageURL = "images/mr-potato.png";
+
+// Resetear los valores de la card
+cardButtonReset.addEventListener("click", () => {
+  cardNameAddressee.textContent = "To: Buddy";
+  cardMessage.textContent = "Te voy a echar mucho de menos";
+  cardPhone.textContent = "612345678";
+  cardNameSender.textContent = "Mr. Potato";
+  cardInsta.textContent = "@mrpotato";
+
+  const cardImage = document.querySelector(".js-card-photo-img");
+  
+  cardImage.style.backgroundImage = `url('${defaultImageURL}')`;
+}); 
+const nameAddresseeInput = document.querySelector(".js-input-nameAddressee");
+const messageInput = document.querySelector(".js-input-message");
+const phoneInput = document.querySelector(".js-input-phone");
+const nameSenderInput = document.querySelector(".js-input-nameSender");
+const instaInput = document.querySelector(".js-input-insta");
+
+cardButtonReset.addEventListener("click", () => {
+  // Resetear los valores de los campos del formulario
+    nameAddresseeInput.value = "";
+    messageInput.value = "";
+    phoneInput.value = "";
+    nameSenderInput.value = "";
+    instaInput.value = "";
+    
+   // Restablecer la imagen predeterminada en el contenedor de la imagen
+    cardPhotoImg.style.backgroundImage = `url('${defaultImageURL}')`;
+});
 
