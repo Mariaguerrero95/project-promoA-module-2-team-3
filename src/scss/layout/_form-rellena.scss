@@ -23,29 +23,25 @@ fieldset {
 .fillout-form {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 10px;
 }
 
 .fillout-form_input {
   display: flex;
   flex-direction: column;
-  gap: 5px;
 
+    &__text {
+      display: flex;
+      gap: 2px;
+    }
     &__button {
       display: flex;
-      margin-right: 30px;
+      gap: 15px;
       align-items: center;
-      gap: 80px;
     }
 
     & textarea {
-      width: 190px;
-      border-radius: 10px;
-      padding: 10px;
-    }
-    & input {
-      border-radius: 10px;
-      padding: 10px;
+      width: 180px;
     }
     }
 
@@ -55,17 +51,18 @@ fieldset {
 
 .form__photobutton{
   background-color: $redToy;
-  color: $yellowToy;
-  padding: 10px 20px 8px 20px;
+  color: white;
+  padding: 5px;
   border-radius: 5px;
-  width: 116px;
+  width: 115px;
+  margin-bottom: 5px;
+  // width: 116px;
 }
 .form__photothumb{
   border: 1px solid red;
   border-radius: 5px;
   height: 40px;
   width: 40px;
-  background-size: cover;
 }
 
 .collapse {
