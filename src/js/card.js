@@ -65,6 +65,7 @@ formRellena.addEventListener("input", (event) => {
 
 
 // FUNCIONALIDAD DEL BOTÓN RESET (está fuera del form y hay que enlazarlo)
+
 /*function resetForm() {
   console.log('hago click en reset')
   formContainer.reset();
@@ -103,7 +104,5 @@ cardButtonReset.addEventListener("click", () => {
     nameSenderInput.value = "";
     instaInput.value = "";
     
-   // Restablecer la imagen predeterminada en el contenedor de la imagen
-    cardPhotoImg.style.backgroundImage = `url('${defaultImageURL}')`;
 });
 
