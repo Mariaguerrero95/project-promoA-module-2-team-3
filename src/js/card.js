@@ -68,7 +68,7 @@ formRellena.addEventListener("input", (event) => {
 
 /*function resetForm() {
   console.log('hago click en reset')
-  formContainer.reset();
+  
   console.log('reseteo form')
   // location.reload();
   // console.log('reseteo card')
@@ -89,23 +89,25 @@ cardButtonReset.addEventListener("click", () => {
   card1.classList.remove("card-background-blue");
   card1.classList.remove("card-background-yellow");
   card1.classList.remove ("card-background-green");
+// Resetear los valores de los campos del formulario
+  formContainer.reset();
 }); 
 
 
 
-const nameAddresseeInput = document.querySelector(".js-input-nameAddressee");
-const messageInput = document.querySelector(".js-input-message");
-const phoneInput = document.querySelector(".js-input-phone");
-const nameSenderInput = document.querySelector(".js-input-nameSender");
-const instaInput = document.querySelector(".js-input-insta");
+// const nameAddresseeInput = document.querySelector(".js-input-nameAddressee");
+// const messageInput = document.querySelector(".js-input-message");
+// const phoneInput = document.querySelector(".js-input-phone");
+// const nameSenderInput = document.querySelector(".js-input-nameSender");
+// const instaInput = document.querySelector(".js-input-insta");
 
-cardButtonReset.addEventListener("click", () => {
-  // Resetear los valores de los campos del formulario
-    nameAddresseeInput.value = "";
-    messageInput.value = "";
-    phoneInput.value = "";
-    nameSenderInput.value = "";
-    instaInput.value = "";
+// cardButtonReset.addEventListener("click", () => {
+//   // Resetear los valores de los campos del formulario
+//     nameAddresseeInput.value = "";
+//     messageInput.value = "";
+//     phoneInput.value = "";
+//     nameSenderInput.value = "";
+//     instaInput.value = "";
     
-});
+// });
 
