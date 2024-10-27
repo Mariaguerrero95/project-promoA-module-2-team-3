@@ -35,20 +35,19 @@ document.addEventListener('DOMContentLoaded', () => {
   fieldsetDiseña.classList.remove('open');
   fieldsetComparte.classList.remove('open');
 
-  // Alterna la clase 'open' cuando se hace clic en cada legend
   
     document.querySelectorAll('legend').forEach(legend => {
       legend.addEventListener('click', () => {
         const parentFieldset = legend.parentElement;
 
-        // Cierra los otros fieldsets al abrir uno
+        // Cerrar los otros fieldsets al abrir uno
         if (!parentFieldset.classList.contains('open')) {
           document.querySelectorAll('fieldset').forEach(fieldset => {
             fieldset.classList.remove('open');
           });
         }
-        
-        // Alterna la clase 'open' en el fieldset seleccionado
+
+        // Alternar la clase 'open' en el fieldset seleccionado
         parentFieldset.classList.toggle('open');
       });
     });
