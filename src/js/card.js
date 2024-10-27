@@ -85,11 +85,14 @@ cardButtonReset.addEventListener("click", () => {
   cardPhone.textContent = "612345678";
   cardNameSender.textContent = "Mr. Potato";
   cardInsta.textContent = "@mrpotato";
-
-  const cardImage = document.querySelector(".js-card-photo-img");
-  
-  cardImage.style.backgroundImage = `url('${defaultImageURL}')`;
+  cardPhotoImg.style.backgroundImage = 'url("images/mr-potato.png")';
+  card1.classList.remove("card-background-blue");
+  card1.classList.remove("card-background-yellow");
+  card1.classList.remove ("card-background-green");
 }); 
+
+
+
 const nameAddresseeInput = document.querySelector(".js-input-nameAddressee");
 const messageInput = document.querySelector(".js-input-message");
 const phoneInput = document.querySelector(".js-input-phone");
