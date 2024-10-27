@@ -61,3 +61,17 @@ fieldset {
 .rotate {
   transform: rotate(180deg);
 }
+/* Ocultar el contenido del desplegable si no tiene la clase 'open' */
+.js-form-design,
+.js-form-fillout,
+.js-form-share {
+  display: none;
+}
+
+/* Mostrar el contenido cuando el contenedor tiene la clase 'open' */
+.open .js-form-design,
+.open .js-form-fillout,
+.open .js-form-share {
+  display: block;
+}
+
