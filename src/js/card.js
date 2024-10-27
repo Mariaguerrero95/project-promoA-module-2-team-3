@@ -91,6 +91,7 @@ cardButtonReset.addEventListener("click", () => {
   card1.classList.remove ("card-background-green");
 // Resetear los valores de los campos del formulario
   formContainer.reset();
+  profileImage.style.backgroundImage = "";
 }); 
 
 
