@@ -9,6 +9,11 @@ const background2 = document.querySelector(".js-amarillo");
 const background3 = document.querySelector (".js-verde");
 const card1 = document.querySelector(".js-card-found-img");
 
+const legendDesign = document.querySelector(".js-legend-design");
+const formDesign = document.querySelector(".js-form-design");
+const arrowDesign = document.querySelector (".js-arrow");
+
+
 // background1.addEventListener("click", () => {
 //     card1.classList.toggle ("card-background-blue");
 
@@ -44,30 +49,6 @@ fieldset.addEventListener("click", (event) =>{
 
     }    
 })
-
-/*Cuando la usuaria haga click en el curso hacia abajo,se despliega el menú
-  Cuando le vuelva a pulsar hacia arriba, el menu vuelve a plegarse.
-  PASOS:
-  - Selecciono los elementos html: legend (icono) y el div (menú)
-  - crear evento para escuchar el click
-*/
-
-const legendDesign = document.querySelector(".js-legend-design");
-const formDesign = document.querySelector(".js-form-design");
-const arrowDesign = document.querySelector (".js-arrow");
-
-legendDesign.addEventListener("click", collapse) 
-
-    function collapse (){
-
-        formDesign.classList.toggle ("form-collapse")
-        arrowDesign.classList.toggle ("form-rotate")
-            
-    }
-   
-       
-
-
 
 
 
