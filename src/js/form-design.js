@@ -27,12 +27,11 @@ PASOS
 
 
 fieldset.addEventListener("click", (event) =>{
-    console.log("event");
+    console.log("click background");
     if (event.target.id === "option1"){
         card1.classList.add("card-background-blue");
         card1.classList.remove("card-background-yellow");
         card1.classList.remove ("card-background-green");
-        
     } else if (event.target.id === "option2"){
         card1.classList.add ("card-background-yellow");
         card1.classList.remove("card-background-blue");
@@ -41,32 +40,28 @@ fieldset.addEventListener("click", (event) =>{
         card1.classList.add ("card-background-green");
         card1.classList.remove("card-background-yellow");
         card1.classList.remove ("card-background-blue");
-
     }    
 })
 
 /*Cuando la usuaria haga click en el curso hacia abajo,se despliega el menú
-  Cuando le vuelva a pulsar hacia arriba, el menu vuelve a plegarse.
-  PASOS:
-  - Selecciono los elementos html: legend (icono) y el div (menú)
-  - crear evento para escuchar el click
+    Cuando le vuelva a pulsar hacia arriba, el menu vuelve a plegarse.
+    PASOS:
+    - Selecciono los elementos html: legend (icono) y el div (menú)
+    - crear evento para escuchar el click
 */
 
 const legendDesign = document.querySelector(".js-legend-design");
 const formDesign = document.querySelector(".js-form-design");
 const arrowDesign = document.querySelector (".js-arrow");
 
-legendDesign.addEventListener("click", collapse) 
+/*legendDesign.addEventListener("click", collapse) 
 
     function collapse (){
 
-        formDesign.classList.toggle ("form-collapse")
+        formDesign.classList.toggle ("collapse")
         arrowDesign.classList.toggle ("form-rotate")
             
-    }
-   
-       
-
+    }*/
 
 
 

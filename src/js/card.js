@@ -112,3 +112,22 @@ cardButtonReset.addEventListener("click", () => {
     
 // });
 
+
+formContainer.addEventListener('click', (event) => {
+  console.log ('click en evento' , event.target)
+  if (event.target.classList === 'title-icon'){
+    console.log('hago click en diseña')
+    formShare.classList.add ('collapse');
+    formRellena.classList.add ('collapse');
+    formDesign.classList.remove ('collapse');
+  } else if (event.target.classList === 'symbol-title-fill-out'){
+    console.log('hago click en diseña')
+    formShare.classList.add ('collapse');
+    formRellena.classList.remove ('collapse');
+    formDesign.classList.add ('collapse');
+  } else if (event.target.classList === 'drop-down-share'){
+    formShare.classList.remove ('collapse');
+    formRellena.classList.add ('collapse');
+    formDesign.classList.add ('collapse');
+  }
+})
