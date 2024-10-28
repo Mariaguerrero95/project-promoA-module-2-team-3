@@ -56,17 +56,6 @@ const legendDesign = document.querySelector(".js-legend-design");
 const formDesign = document.querySelector(".js-form-design");
 const arrowDesign = document.querySelector (".js-arrow");
 
-legendDesign.addEventListener("click", collapse) 
-
-    function collapse (){
-
-        formDesign.classList.toggle ("collapse")
-        arrowDesign.classList.toggle ("rotate")
-            
-    }
-   
-       
-
 
 
 
