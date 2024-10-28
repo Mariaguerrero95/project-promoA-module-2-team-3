@@ -60,8 +60,8 @@ legendDesign.addEventListener("click", collapse)
 
     function collapse (){
 
-        formDesign.classList.toggle ("form-collapse")
-        arrowDesign.classList.toggle ("form-rotate")
+        formDesign.classList.toggle ("collapse")
+        arrowDesign.classList.toggle ("rotate")
             
     }
    
