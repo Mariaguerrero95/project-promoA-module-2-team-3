@@ -101,4 +101,19 @@
       gap: 2px;
     }
   }
+
+  &__create {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    background-color: #871987;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+    transition: transform 0.3s;
+    &__button:hover {
+      transform: scale(1.1);
+    }
+  }
+
 }
