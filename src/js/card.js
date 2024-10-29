@@ -1,7 +1,7 @@
 // Constantes de card
 
 const cardContainer = document.querySelector(".js-card");
-const cardFoundImg = document.querySelector(".js-card-found-img");
+
 const cardNameAddressee = document.querySelector(".js-card-nameAddressee");
 const cardMessage = document.querySelector(".js-card-message");
 const cardPhotoImg = document.querySelector(".js-card-photo-img");
@@ -49,9 +49,9 @@ cardButtonReset.addEventListener("click", () => {
   cardNameSender.textContent = "Mr. Potato";
   cardInsta.textContent = "@mrpotato";
   cardPhotoImg.style.backgroundImage = 'url("images/mr-potato.png")';
-  card1.classList.remove("card-background-blue");
-  card1.classList.remove("card-background-yellow");
-  card1.classList.remove ("card-background-green");
+  cardFoundImg.classList.add("card-background-blue");
+  cardFoundImg.classList.remove("card-background-yellow");
+  cardFoundImg.classList.remove("card-background-green");
 // Resetear los valores de los campos del formulario
   formContainer.reset();
   profileImage.style.backgroundImage = "";
