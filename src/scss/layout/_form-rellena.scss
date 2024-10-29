@@ -53,8 +53,9 @@ fieldset {
 }
 
 .form__photobutton{
-  background-color: $redToy;
-  color: $yellowToy;
+  border: 2px solid;
+  background-color: #efd5458a;
+  color: #ab5e25;
   padding: 10px 20px 8px 20px;
   border-radius: 5px;
   width: 116px;
