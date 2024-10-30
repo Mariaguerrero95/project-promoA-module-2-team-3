@@ -13,9 +13,11 @@ fieldset {
     align-items: center;
     gap: 10px;
     height: 20px;
+    
   }
 
   i {
+    
     padding-bottom: 5px;
   }
 
@@ -24,12 +26,11 @@ fieldset {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    
 
     .anchors__icon {
       background-color: #efd5458a;
       color: #ab5e25;
-      
-      
       align-items: center;
       justify-content: space-between;
       display: flex;
@@ -40,7 +41,7 @@ fieldset {
       
 
       a {
-        color: $yellowToy;
+        color: #ab5e25;
         padding-top: 5px;
         &:hover {
           cursor: pointer;
