@@ -25,8 +25,18 @@ main {
   font-size: 16px;
   background-color: $colorBtn; /* Asegúrate de darle estilo de botón */
   color: white;
-  border-radius: 15px; /* Aquí se aplican los bordes redondeados */
   padding-bottom: 6px;
+  padding: 10px 20px;
+  border-radius: 25px;
+  border: 2px solid;
+  background-color: #d777d77d;
+  color: #871987;    font-size: 30px;
+  cursor: pointer;
+  transition: transform 0.3s;
+  transform: scale(1);
+}
+.btn:hover{
+  transform: scale(1.1);
 }
 .title-card {
   color: $blueToy;

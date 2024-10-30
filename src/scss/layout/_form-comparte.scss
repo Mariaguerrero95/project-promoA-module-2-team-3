@@ -1,6 +1,7 @@
 fieldset {
   width: 80%;
 }
+
 .drop-down-share {
   display: flex;
   width: 100%;
@@ -25,13 +26,18 @@ fieldset {
     gap: 20px;
 
     .anchors__icon {
-      background-color: $redToy;
-      padding: 5px 20px;
-      border-radius: 10px;
+      background-color: #efd5458a;
+      color: #ab5e25;
+      
+      
       align-items: center;
       justify-content: space-between;
       display: flex;
-      width: 50%;
+      border: 2px solid;
+      padding: 10px 20px 8px 20px;
+      border-radius: 5px;
+      width: 116px;
+      
 
       a {
         color: $yellowToy;
