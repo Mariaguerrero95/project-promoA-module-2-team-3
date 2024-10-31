@@ -1,5 +1,5 @@
-body{
-  &:before {
+body {
+  &::before {
     content: "";
     position: absolute;
     top: 0;
@@ -7,11 +7,8 @@ body{
     right: 0;
     bottom: 0;
     background-image: url(../images/malo.jpg);
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
     background-repeat: no-repeat;
-    min-height: 100vh;
+    background-size: cover;
     opacity: 0.5;
     z-index: -1;
   }
@@ -28,19 +25,8 @@ main {
   font-size: 16px;
   background-color: $colorBtn; /* Asegúrate de darle estilo de botón */
   color: white;
+  border-radius: 15px; /* Aquí se aplican los bordes redondeados */
   padding-bottom: 6px;
-  padding: 10px 20px;
-  border-radius: 25px;
-  border: 2px solid;
-  background-color: #d777d77d;
-  color: #871987;    
-  font-size: 30px;
-  cursor: pointer;
-  transition: transform 0.3s;
-  transform: scale(1);
-}
-.btn:hover{
-  transform: scale(1.1);
 }
 .title-card {
   color: $blueToy;
@@ -117,7 +103,6 @@ main {
 
   @media all and (min-width: 768px) {
     margin: 20px;
-    background-size: cover
   }
 
   @media all and (min-width: 1200px) {
