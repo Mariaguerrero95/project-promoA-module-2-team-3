@@ -1,10 +1,10 @@
-const formContainer = document.querySelector(".js-div-container__form");
+const formContainers = document.querySelectorAll(".js-legend");
 
-formContainer.addEventListener("click", dropDown);
+const handleClick = (event) => {
+  console.log("hago click", event.currentTarget);
+  
+  if (event.currentTarget.classList.contains("js-legend-design")){
 
-function dropDown(event) {
-
-  if (event.target.classList.contains('js-design-drop-down')){
     formDesign.classList.toggle("collapse");
     arrowDesign.classList.toggle("rotate");
 
@@ -13,9 +13,7 @@ function dropDown(event) {
 
     formShare.classList.add("collapse");
     arrowShare.classList.remove("rotate");
-  }
-
-  if (event.target.classList.contains('js-fillout-drop-down')){
+  }else if(event.currentTarget.classList.contains("js-legend-fillout")){
     formFillOut.classList.toggle("collapse");
     arrowFillOut.classList.toggle("rotate");
 
@@ -24,9 +22,7 @@ function dropDown(event) {
 
     formShare.classList.add("collapse");
     arrowShare.classList.remove("rotate");
-  }
-
-  if(event.target.classList.contains('js-share-drop-down')) {
+  }else if(event.currentTarget.classList.contains("js-legend-share")){
     formShare.classList.toggle("collapse");
     arrowShare.classList.toggle("rotate");
 
@@ -36,4 +32,15 @@ function dropDown(event) {
     formFillOut.classList.add("collapse");
     arrowFillOut.classList.remove("rotate");
   }
+
+  }
+
+for (const legend of formContainers){
+  console.log("legend: ", legend);
+    legend.addEventListener("click", handleClick);
+    
 }
+  
+
+
+
