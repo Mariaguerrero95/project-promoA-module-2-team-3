@@ -10,3 +10,4 @@ const inputInsta = document.querySelector(".js-input-insta");
 const legendFillOut = document.querySelector(".js-legend-fillout");
 const arrowFillOut = document.querySelector(".js-arrow-fillout");
 const formFillOut = document.querySelector(".js-form-fillout");
+

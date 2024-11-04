@@ -24,8 +24,28 @@ Cuando la usuaria escriba en el input de rellena, quiero que se previsualice en 
 function preview(event, idName, cardClass) {
   if (event.target.id === idName) {
     cardClass.innerHTML = event.target.value;
+    
   }
 }
+const objectCreated = (event)=>{
+  const idInput = event.target.id;
+  if (event.target.id === "nameAddressee"){
+    dataForm.field1 = event.target.value;
+  } else if (event.target.id === "message"){
+    dataForm.field2 = event.target.value;
+  }else if (event.target.id === "phone"){
+    dataForm.field3 = event.target.value;
+  }else if (event.target.id === "nameSender"){
+    dataForm.field4 = event.target.value;
+  }else if (event.target.id === "insta"){
+    dataForm.field5 = event.target.value;
+  }else if (event.target.id === "photo"){
+    dataForm.photo = event.target.value;
+  }
+  
+  
+  
+} 
 
 formRellena.addEventListener("input", (event) => {
   preview(event, "nameAddressee", cardNameAddressee);
@@ -34,7 +54,11 @@ formRellena.addEventListener("input", (event) => {
   preview(event, "phone", cardPhone);
   preview(event, "nameSender", cardNameSender);
   preview(event, "insta", cardInsta);
+  objectCreated(event)
+  
+  
 });
+
 
 
 // FUNCIONALIDAD DEL BOTÓN RESET (está fuera del form y hay que enlazarlo)
@@ -56,3 +80,14 @@ cardButtonReset.addEventListener("click", () => {
   formContainer.reset();
   profileImage.style.backgroundImage = "";
 }); 
+
+const dataForm = {
+  field1: 0,
+  field2: "",
+  field3: "",
+  field4: "",
+  field5: "",
+  photo: ""
+}
+
+
