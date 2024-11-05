@@ -34,7 +34,7 @@ fieldset {
       align-items: center;
       justify-content: space-between;
       display: flex;
-      width: 50%;
+      width: 167px;
 
       a {
         color: #ab5e25;
@@ -60,4 +60,26 @@ fieldset {
       }
     }
   }
+}
+
+.card__create {
+  padding: 10px 20px;
+  border-radius: 25px;
+  border: 2px solid;
+  background-color: #d777d77d;
+  color: #871987;
+  width: 210px;
+  font-size: 30px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+.card__create__button:hover {
+  transform: scale(1.1);
+}
+.footer {
+  text-align: center;
+  margin: -8px -8px 10px;
+}
+.name {
+  color: #004b90;
 }
