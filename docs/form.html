@@ -18,23 +18,23 @@
     />
 
     
-    <link rel="stylesheet" href="./assets/main-dacdfa29.css">
+    <link rel="stylesheet" href="./assets/main-f85b07ba.css">
   </head>
   <body>
     <div class="div-container">
-      <form class="div-container__form js-div-container__form" action="">
+      <form class="div-container__form" action="">
         <fieldset class="fieldset js-fieldset-diseña">
-  <legend class="title-icon js-legend-design">
-    <div class="image-title">
-      <i class="fa-regular fa-object-ungroup"></i>
-      <p>Diseña</p>
+  <legend class="title-icon js-legend-design js-design-drop-down js-legend">
+    <div class="image-title js-design-drop-down">
+      <i class="fa-regular fa-object-ungroup js-design-drop-down"></i>
+      <p class="js-design-drop-down">Diseña</p>
     </div>
-    <div class="js-arrow">
-      <i class="fa-solid fa-chevron-down"></i>
+    <div class="js-arrow js-design-drop-down">
+      <i class="fa-solid fa-chevron-down js-design-drop-down"></i>
     </div>
   </legend>
-  <div>
-    <div class="fill-form js-form-design">
+
+    <div class="fill-form js-form-design collapse">
       <label for="option1">
         <input class="js-azul"
           id="option1"
@@ -63,18 +63,18 @@
         Fondo 3
       </label>
     </div>
-  </div>
+
 </fieldset>
 
         <fieldset class="js-fieldset-rellena">
-  <legend class="symbol-title-fill-out js-legend-fillout">
-    <div class="fill-out-text">
-      <i class="fa-regular fa-keyboard"></i>
-      <p>RELLENA</p>
+  <legend class="symbol-title-fill-out js-legend-fillout js-fillout-drop-down js-legend">
+    <div class="fill-out-text js-fillout-drop-down">
+      <i class="fa-regular fa-keyboard js-fillout-drop-down"></i>
+      <p class="js-fillout-drop-down">RELLENA</p>
     </div>
 
-    <div class="down-arrow js-arrow-fillout">
-      <i class="fa-solid fa-chevron-down"></i>
+    <div class="down-arrow js-arrow-fillout js-fillout-drop-down rotate">
+      <i class="fa-solid fa-chevron-down js-fillout-drop-down"></i>
     </div>
   </legend>
 
@@ -96,6 +96,7 @@
         class="js-input-message"
         name="message"
         type="text"
+        maxlength="220"
         required
         placeholder="Te voy a echar mucho de menos"
         >
@@ -157,17 +158,23 @@
 </fieldset>
 
         <fieldset>
-  <legend class="drop-down-share js-legend-share">
-    <div class="drop-down-share__text">
-      <i class="fa-solid fa-share-nodes"></i>
-      <p>Comparte</p>
+  <legend class="drop-down-share js-legend-share js-share-drop-down js-legend">
+    <div class="drop-down-share__text js-share-drop-down">
+      <i class="fa-solid fa-share-nodes js-share-drop-down"></i>
+      <p class="js-share-drop-down">Comparte</p>
     </div>
 
-    <div class="drop-down-share__btn js-icon-arrow-share">
-      <i class="fa-solid fa-chevron-down"></i>
+    <div class="drop-down-share__btn js-icon-arrow-share js-share-drop-down">
+      <i class="fa-solid fa-chevron-down js-share-drop-down"></i>
     </div>
   </legend>
-  <div class="drop-down-share__anchors js-form-share">
+
+  <div class="drop-down-share__anchors js-form-share collapse">
+    <div class="card__create js-card-create">
+      <button class="card__create__button js-card-create">Crear tarjeta</button>
+    </div>
+
+  <div class="js-share-open collapse">
     <div class="anchors__icon">
       <a href="mailto:">Por e-mail</a>
       <a href="mailto:"> <i class="fa-regular fa-envelope"></i></a>
@@ -184,8 +191,7 @@
 
     <div class="anchors__icon">
       <a href="https://web.whatsapp.com/" target="_blank" noreferrer
-        >Por WhatsApp</a
-      >
+        >Por WhatsApp</a>
       <a href="https://web.whatsapp.com/" target="_blank" noreferrer
         ><i class="fa-brands fa-whatsapp"></i
       ></a>
@@ -195,6 +201,8 @@
       <a href="#">Imprimir</a>
       <a href="#"><i class="fa-solid fa-print"></i></a>
     </div>
+  </div>
+    
 
     <!--
         El # se utiliza para crear un enlace que no navega a otra página, permitiendo que se ejecute una función de JavaScript en su lugar. 
@@ -216,7 +224,7 @@
   </button>
   <div class="card">
     <div class="card__found">
-      <div class="card__found__img js-card-found-img">
+      <div class="card__found__img js-card-found-img card-background-blue">
       </div>
     </div>
 
@@ -248,7 +256,7 @@
         <p class="js-card-insta">@mrpotato</p>
       </div>
     </div>
-  </div>
+  </div>  
 </section>
 
     </div>
