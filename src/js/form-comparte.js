@@ -21,7 +21,8 @@ const arrowShare = document.querySelector(".js-icon-arrow-share");
 const buttonCardCreate = document.querySelector(".js-card-create");
 const openShare = document.querySelector(".js-share-open");
 
-function handleOpenShare(){
+function handleOpenShare(event){
+  event.preventDefault();
  openShare.classList.remove("collapse");
 }
 
