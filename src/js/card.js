@@ -24,9 +24,9 @@ Cuando la usuaria escriba en el input de rellena, quiero que se previsualice en 
 function preview(event, idName, cardClass) {
   if (event.target.id === idName) {
     cardClass.innerHTML = event.target.value;
-    
   }
 }
+//CREAMOS EL OBJETO:
 const objectCreated = (event)=>{
   const idInput = event.target.id;
   if (event.target.id === "nameAddressee"){
@@ -42,11 +42,7 @@ const objectCreated = (event)=>{
   }else if (event.target.id === "photo"){
     dataForm.photo = event.target.value;
   }
-  
-  
-  
 } 
-
 formRellena.addEventListener("input", (event) => {
   preview(event, "nameAddressee", cardNameAddressee);
   preview(event, "message", cardMessage);
@@ -58,11 +54,29 @@ formRellena.addEventListener("input", (event) => {
   
   
 });
+//ENVIAMOS DATOS DEL OBJETO AL SERVIDOR:
+/*
+1ªPARTE: POST
+- Cuando usuaria haga click en Crear tarjeta
+  - Enviamos los datos del formulario al servidor (POST)
+    - Recoger ID que me da el servidor
+    - Mostrar enlace de la página
+    - Modificar dirección del enlace
+*/
+
+
+
+
+
+
+
+
+
+
 
 
 
 // FUNCIONALIDAD DEL BOTÓN RESET (está fuera del form y hay que enlazarlo)
-
 const defaultImageURL = "images/mr-potato.png";
 
 // Resetear los valores de la card
