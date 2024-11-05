@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -18,11 +18,11 @@
     />
 
     
-    <link rel="stylesheet" href="./assets/main-f85b07ba.css">
+    <link rel="stylesheet" href="./assets/main-dc7f485b.css">
   </head>
   <body>
     <div class="div-container">
-      <form class="div-container__form" action="">
+      <form class="div-container__form js-div-container__form" action="">
         <fieldset class="fieldset js-fieldset-diseña">
   <legend class="title-icon js-legend-design js-design-drop-down js-legend">
     <div class="image-title js-design-drop-down">
@@ -67,7 +67,9 @@
 </fieldset>
 
         <fieldset class="js-fieldset-rellena">
-  <legend class="symbol-title-fill-out js-legend-fillout js-fillout-drop-down js-legend">
+  <legend
+    class="symbol-title-fill-out js-legend-fillout js-fillout-drop-down js-legend"
+  >
     <div class="fill-out-text js-fillout-drop-down">
       <i class="fa-regular fa-keyboard js-fillout-drop-down"></i>
       <p class="js-fillout-drop-down">RELLENA</p>
@@ -92,25 +94,34 @@
     </div>
     <div class="fillout-form_input">
       <label for="message">Quiero decirte que:</label>
-      <textarea id="message"
+      <textarea
+        id="message"
         class="js-input-message"
         name="message"
         type="text"
         maxlength="220"
         required
         placeholder="Te voy a echar mucho de menos"
-        >
+      >
       </textarea>
     </div>
 
     <div class="fillout-form_input">
       <div class="fillout-form_input-icono">
         <i class="fa-solid fa-camera-retro"></i>
-        <label class="form__photolabel" for="photo">Selecciona una imagen</label>
+        <label class="form__photolabel" for="photo"
+          >Selecciona una imagen</label
+        >
       </div>
       <div class="fillout-form_input__button">
         <label for="photo" class="form__photobutton">Añadir imagen</label>
-        <input id="photo" class="form__photoinput js__profile-upload-btn" name="photo" type="file" required/>
+        <input
+          id="photo"
+          class="form__photoinput js__profile-upload-btn"
+          name="photo"
+          type="file"
+          required
+        />
         <span class="js__profile-image form__photothumb"></span>
       </div>
     </div>
@@ -121,7 +132,7 @@
         id="phone"
         class="fillout-form_input__phone js-input-phone"
         name="phone"
-        type="number"
+        type="text"
         maxlength="9"
         placeholder="612345678"
         required
@@ -174,35 +185,35 @@
       <button class="card__create__button js-card-create">Crear tarjeta</button>
     </div>
 
-  <div class="js-share-open collapse">
-    <div class="anchors__icon">
-      <a href="mailto:">Por e-mail</a>
-      <a href="mailto:"> <i class="fa-regular fa-envelope"></i></a>
-    </div>
+    <div class="js-share-open collapse">
+      <div class="anchors__icon">
+        <a href="#">Por Twitter</a>
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+      </div>
 
-    <div class="anchors__icon">
-      <a href="https://www.instagram.com/" target="_blank" noreferrer
-        >Por instagram</a
-      >
-      <a href="https://www.instagram.com/" target="_blank" noreferrer
-        ><i class="fa-brands fa-instagram"></i
-      ></a>
-    </div>
+      <div class="anchors__icon">
+        <a href="mailto:">Por e-mail</a>
+        <a href="mailto:"> <i class="fa-regular fa-envelope"></i></a>
+      </div>
 
-    <div class="anchors__icon">
-      <a href="https://web.whatsapp.com/" target="_blank" noreferrer
-        >Por WhatsApp</a>
-      <a href="https://web.whatsapp.com/" target="_blank" noreferrer
-        ><i class="fa-brands fa-whatsapp"></i
-      ></a>
-    </div>
+      <div class="anchors__icon">
+        <a href="https://www.instagram.com/" target="_blank" noreferrer
+          >Por instagram</a
+        >
+        <a href="https://www.instagram.com/" target="_blank" noreferrer
+          ><i class="fa-brands fa-instagram"></i
+        ></a>
+      </div>
 
-    <div class="anchors__icon">
-      <a href="#">Imprimir</a>
-      <a href="#"><i class="fa-solid fa-print"></i></a>
+      <div class="anchors__icon">
+        <a href="https://web.whatsapp.com/" target="_blank" noreferrer
+          >Por WhatsApp</a
+        >
+        <a href="https://web.whatsapp.com/" target="_blank" noreferrer
+          ><i class="fa-brands fa-whatsapp"></i
+        ></a>
+      </div>
     </div>
-  </div>
-    
 
     <!--
         El # se utiliza para crear un enlace que no navega a otra página, permitiendo que se ejecute una función de JavaScript en su lugar. 
