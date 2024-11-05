@@ -12,7 +12,6 @@ const legendShare = document.querySelector(".js-legend-share");
 const formShare = document.querySelector(".js-form-share");
 const arrowShare = document.querySelector(".js-icon-arrow-share");
 
-
 /*Cuando la usuaria haga click en crear tarjeta, se despliegan las maneras de compartir
 -seleccionar los elementos del html: boton, botones compartir,
 -cuando la usuaria haga click
@@ -21,9 +20,9 @@ const arrowShare = document.querySelector(".js-icon-arrow-share");
 const buttonCardCreate = document.querySelector(".js-card-create");
 const openShare = document.querySelector(".js-share-open");
 
-function handleOpenShare(event){
+function handleOpenShare(event) {
   event.preventDefault();
- openShare.classList.remove("collapse");
+  openShare.classList.remove("collapse");
 }
 
 buttonCardCreate.addEventListener("click", handleOpenShare);

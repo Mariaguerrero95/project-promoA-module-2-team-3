@@ -1,7 +1,7 @@
 // Constantes de card
 
 const cardContainer = document.querySelector(".js-card");
-
+const cardFoundImg = document.querySelector(".js-card-found-img");
 const cardNameAddressee = document.querySelector(".js-card-nameAddressee");
 const cardMessage = document.querySelector(".js-card-message");
 const cardPhotoImg = document.querySelector(".js-card-photo-img");
@@ -24,28 +24,24 @@ Cuando la usuaria escriba en el input de rellena, quiero que se previsualice en 
 function preview(event, idName, cardClass) {
   if (event.target.id === idName) {
     cardClass.innerHTML = event.target.value;
-    
   }
 }
-const objectCreated = (event)=>{
+const objectCreated = (event) => {
   const idInput = event.target.id;
-  if (event.target.id === "nameAddressee"){
+  if (event.target.id === "nameAddressee") {
     dataForm.field1 = event.target.value;
-  } else if (event.target.id === "message"){
+  } else if (event.target.id === "message") {
     dataForm.field2 = event.target.value;
-  }else if (event.target.id === "phone"){
+  } else if (event.target.id === "phone") {
     dataForm.field3 = event.target.value;
-  }else if (event.target.id === "nameSender"){
+  } else if (event.target.id === "nameSender") {
     dataForm.field4 = event.target.value;
-  }else if (event.target.id === "insta"){
+  } else if (event.target.id === "insta") {
     dataForm.field5 = event.target.value;
-  }else if (event.target.id === "photo"){
+  } else if (event.target.id === "photo") {
     dataForm.photo = event.target.value;
   }
-  
-  
-  
-} 
+};
 
 formRellena.addEventListener("input", (event) => {
   preview(event, "nameAddressee", cardNameAddressee);
@@ -54,12 +50,8 @@ formRellena.addEventListener("input", (event) => {
   preview(event, "phone", cardPhone);
   preview(event, "nameSender", cardNameSender);
   preview(event, "insta", cardInsta);
-  objectCreated(event)
-  
-  
+  objectCreated(event);
 });
-
-
 
 // FUNCIONALIDAD DEL BOTÓN RESET (está fuera del form y hay que enlazarlo)
 
@@ -76,10 +68,15 @@ cardButtonReset.addEventListener("click", () => {
   cardFoundImg.classList.add("card-background-blue");
   cardFoundImg.classList.remove("card-background-yellow");
   cardFoundImg.classList.remove("card-background-green");
-// Resetear los valores de los campos del formulario
+  // Resetear los valores de los campos del formulario
   formContainer.reset();
+  // nameAddresseeInput.value = "";
+  //     messageInput.value = "";
+  //     phoneInput.value = "";
+  //     nameSenderInput.value = "";
+  //     instaInput.value = "";
   profileImage.style.backgroundImage = "";
-}); 
+});
 
 const dataForm = {
   field1: 0,
@@ -87,7 +84,5 @@ const dataForm = {
   field3: "",
   field4: "",
   field5: "",
-  photo: ""
-}
-
-
+  photo: "",
+};
