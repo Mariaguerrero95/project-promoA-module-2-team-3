@@ -1,5 +1,7 @@
 <fieldset class="js-fieldset-rellena">
-  <legend class="symbol-title-fill-out js-legend-fillout js-fillout-drop-down js-legend">
+  <legend
+    class="symbol-title-fill-out js-legend-fillout js-fillout-drop-down js-legend"
+  >
     <div class="fill-out-text js-fillout-drop-down">
       <i class="fa-regular fa-keyboard js-fillout-drop-down"></i>
       <p class="js-fillout-drop-down">RELLENA</p>
@@ -24,25 +26,34 @@
     </div>
     <div class="fillout-form_input">
       <label for="message">Quiero decirte que:</label>
-      <textarea id="message"
+      <textarea
+        id="message"
         class="js-input-message"
         name="message"
         type="text"
         maxlength="220"
         required
         placeholder="Te voy a echar mucho de menos"
-        >
+      >
       </textarea>
     </div>
 
     <div class="fillout-form_input">
       <div class="fillout-form_input-icono">
         <i class="fa-solid fa-camera-retro"></i>
-        <label class="form__photolabel" for="photo">Selecciona una imagen</label>
+        <label class="form__photolabel" for="photo"
+          >Selecciona una imagen</label
+        >
       </div>
       <div class="fillout-form_input__button">
         <label for="photo" class="form__photobutton">Añadir imagen</label>
-        <input id="photo" class="form__photoinput js__profile-upload-btn" name="photo" type="file" required/>
+        <input
+          id="photo"
+          class="form__photoinput js__profile-upload-btn"
+          name="photo"
+          type="file"
+          required
+        />
         <span class="js__profile-image form__photothumb"></span>
       </div>
     </div>
@@ -53,7 +64,7 @@
         id="phone"
         class="fillout-form_input__phone js-input-phone"
         name="phone"
-        type="number"
+        type="text"
         maxlength="9"
         placeholder="612345678"
         required

@@ -11,3 +11,9 @@ const legendFillOut = document.querySelector(".js-legend-fillout");
 const arrowFillOut = document.querySelector(".js-arrow-fillout");
 const formFillOut = document.querySelector(".js-form-fillout");
 
+inputPhone.addEventListener("input", validatePhone);
+
+function validatePhone() {
+  // Reemplaza cualquier carácter que no sea un dígito
+  inputPhone.value = inputPhone.value.replace(/[^0-9]/g, "");
+}
