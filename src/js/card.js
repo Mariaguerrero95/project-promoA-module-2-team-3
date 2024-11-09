@@ -53,8 +53,6 @@ const dataForm = {
   photo: "",
 };
 
-console.log("dataForm es", dataForm);
-
 formRellena.addEventListener("input", (event) => {
   preview(event, "nameAddressee", cardNameAddressee);
   preview(event, "message", cardMessage);
