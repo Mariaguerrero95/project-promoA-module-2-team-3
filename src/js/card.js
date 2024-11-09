@@ -26,6 +26,7 @@ function preview(event, idName, cardClass) {
     cardClass.innerHTML = event.target.value;
   }
 }
+
 const objectCreated = (event) => {
   const idInput = event.target.id;
   if (event.target.id === "nameAddressee") {
@@ -42,6 +43,17 @@ const objectCreated = (event) => {
     dataForm.photo = event.target.value;
   }
 };
+
+const dataForm = {
+  field1: 0,
+  field2: "",
+  field3: "",
+  field4: "",
+  field5: "",
+  photo: "",
+};
+
+console.log("dataForm es", dataForm);
 
 formRellena.addEventListener("input", (event) => {
   preview(event, "nameAddressee", cardNameAddressee);
@@ -77,12 +89,3 @@ cardButtonReset.addEventListener("click", () => {
   //     instaInput.value = "";
   profileImage.style.backgroundImage = "";
 });
-
-const dataForm = {
-  field1: 0,
-  field2: "",
-  field3: "",
-  field4: "",
-  field5: "",
-  photo: "",
-};

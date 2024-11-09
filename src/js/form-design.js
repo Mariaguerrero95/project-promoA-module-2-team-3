@@ -6,13 +6,11 @@
 const fieldset = document.querySelector(".js-fieldset-diseña");
 const background1 = document.querySelector(".js-azul");
 const background2 = document.querySelector(".js-amarillo");
-const background3 = document.querySelector (".js-verde");
-
+const background3 = document.querySelector(".js-verde");
 
 const legendDesign = document.querySelector(".js-legend-design");
 const formDesign = document.querySelector(".js-form-design");
-const arrowDesign = document.querySelector (".js-arrow");
-
+const arrowDesign = document.querySelector(".js-arrow");
 
 // background1.addEventListener("click", () => {
 //     card1.classList.toggle ("card-background-blue");
@@ -30,33 +28,18 @@ PASOS
 - Cuando la usuaria haga click en formulario
 */
 
-
-fieldset.addEventListener("click", (event) =>{
-    console.log("event");
-    if (event.target.id === "option1"){
-        cardFoundImg.classList.add("card-background-blue");
-        cardFoundImg.classList.remove("card-background-yellow");
-        cardFoundImg.classList.remove("card-background-green");
-        
-    } else if (event.target.id === "option2"){
-        cardFoundImg.classList.add("card-background-yellow");
-        cardFoundImg.classList.remove("card-background-blue");
-        cardFoundImg.classList.remove("card-background-green");
-    } else if (event.target.id === "option3"){
-        cardFoundImg.classList.add("card-background-green");
-        cardFoundImg.classList.remove("card-background-yellow");
-        cardFoundImg.classList.remove("card-background-blue");
-
-    }    
-})
-
-
-
-
-
-
-
-
-
-
-
+fieldset.addEventListener("click", (event) => {
+  if (event.target.id === "option1") {
+    cardFoundImg.classList.add("card-background-blue");
+    cardFoundImg.classList.remove("card-background-yellow");
+    cardFoundImg.classList.remove("card-background-green");
+  } else if (event.target.id === "option2") {
+    cardFoundImg.classList.add("card-background-yellow");
+    cardFoundImg.classList.remove("card-background-blue");
+    cardFoundImg.classList.remove("card-background-green");
+  } else if (event.target.id === "option3") {
+    cardFoundImg.classList.add("card-background-green");
+    cardFoundImg.classList.remove("card-background-yellow");
+    cardFoundImg.classList.remove("card-background-blue");
+  }
+});

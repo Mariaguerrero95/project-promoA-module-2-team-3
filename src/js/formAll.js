@@ -1,10 +1,7 @@
 const formContainers = document.querySelectorAll(".js-legend");
 
 const handleClick = (event) => {
-  console.log("hago click", event.currentTarget);
-  
-  if (event.currentTarget.classList.contains("js-legend-design")){
-
+  if (event.currentTarget.classList.contains("js-legend-design")) {
     formDesign.classList.toggle("collapse");
     arrowDesign.classList.toggle("rotate");
 
@@ -13,7 +10,7 @@ const handleClick = (event) => {
 
     formShare.classList.add("collapse");
     arrowShare.classList.remove("rotate");
-  }else if(event.currentTarget.classList.contains("js-legend-fillout")){
+  } else if (event.currentTarget.classList.contains("js-legend-fillout")) {
     formFillOut.classList.toggle("collapse");
     arrowFillOut.classList.toggle("rotate");
 
@@ -22,7 +19,7 @@ const handleClick = (event) => {
 
     formShare.classList.add("collapse");
     arrowShare.classList.remove("rotate");
-  }else if(event.currentTarget.classList.contains("js-legend-share")){
+  } else if (event.currentTarget.classList.contains("js-legend-share")) {
     formShare.classList.toggle("collapse");
     arrowShare.classList.toggle("rotate");
 
@@ -32,15 +29,8 @@ const handleClick = (event) => {
     formFillOut.classList.add("collapse");
     arrowFillOut.classList.remove("rotate");
   }
+};
 
-  }
-
-for (const legend of formContainers){
-  console.log("legend: ", legend);
-    legend.addEventListener("click", handleClick);
-    
+for (const legend of formContainers) {
+  legend.addEventListener("click", handleClick);
 }
-  
-
-
-
