@@ -5,6 +5,7 @@ const arrowShare = document.querySelector(".js-icon-arrow-share");
 const buttonCardCreate = document.querySelector(".js-card-create");
 const openShare = document.querySelector(".js-share-open");
 const linkCard = document.querySelector(".js-link");
+let paragraphUrlCard = document.querySelector(".js-urlCard");
 
 const dataForm = {
   field1: 1,
@@ -22,13 +23,13 @@ const objectCreated = () => {
   dataForm.field4 = inputPhone.value;
   dataForm.field5 = inputNameSender.value;
   dataForm.field6 = inputInsta.value;
+  dataForm.field7 = "";
   dataForm.photo = fr.result;
 };
 
 function handleCreateCard(event) {
   event.preventDefault();
   objectCreated();
-  console.log("JSON.stringify(dataForm),", JSON.stringify(dataForm));
 
   fetch("https://dev.adalab.es/api/info/data", {
     method: "POST",
@@ -38,8 +39,10 @@ function handleCreateCard(event) {
     .then((response) => response.json())
     .then((data) => {
       const idCard = data.infoID;
-      linkCard.classList.remove("collapse");
+
       linkCard.href = `./cardDetails.html?id=${idCard}`;
+      linkCard.classList.remove("collapse");
+      paragraphUrlCard.innerHTML = linkCard.href;
 
       openShare.classList.remove("collapse");
     });
