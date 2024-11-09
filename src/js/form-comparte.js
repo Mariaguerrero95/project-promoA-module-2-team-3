@@ -4,14 +4,28 @@ const arrowShare = document.querySelector(".js-icon-arrow-share");
 
 const buttonCardCreate = document.querySelector(".js-card-create");
 const openShare = document.querySelector(".js-share-open");
+const linkCard = document.querySelector(".js-link");
 
-function handleOpenShare(event) {
+function handleCreateCard(event) {
   event.preventDefault();
-  openShare.classList.remove("collapse");
-  console.log("dataForm es", dataForm);
+
+  console.log("JSON.stringify(dataForm),", JSON.stringify(dataForm));
+  fetch("https://dev.adalab.es/api/info/data", {
+    method: "POST",
+    body: JSON.stringify(dataForm),
+    headers: { "Content-type": "application/json" },
+  })
+    .then((response) => response.json())
+    .then((data) => {
+      const idCard = data.infoID;
+      linkCard.classList.remove("collapse");
+      linkCard.href = `./cardDetails.html?id=${idCard}`;
+
+      openShare.classList.remove("collapse");
+    });
 }
 
-buttonCardCreate.addEventListener("click", handleOpenShare);
+buttonCardCreate.addEventListener("click", handleCreateCard);
 
 /*Cuando la usuaria haga click en crear tarjeta
     - enviar los datos del objeto al servidor (https://dev.adalab.es/api/info/data)

@@ -30,26 +30,27 @@ function preview(event, idName, cardClass) {
 const objectCreated = (event) => {
   const idInput = event.target.id;
   if (event.target.id === "nameAddressee") {
-    dataForm.field1 = event.target.value;
-  } else if (event.target.id === "message") {
     dataForm.field2 = event.target.value;
-  } else if (event.target.id === "phone") {
+  } else if (event.target.id === "message") {
     dataForm.field3 = event.target.value;
-  } else if (event.target.id === "nameSender") {
+  } else if (event.target.id === "phone") {
     dataForm.field4 = event.target.value;
-  } else if (event.target.id === "insta") {
+  } else if (event.target.id === "nameSender") {
     dataForm.field5 = event.target.value;
+  } else if (event.target.id === "insta") {
+    dataForm.field6 = event.target.value;
   } else if (event.target.id === "photo") {
     dataForm.photo = event.target.value;
   }
 };
 
 const dataForm = {
-  field1: 0,
+  field1: 1,
   field2: "",
   field3: "",
   field4: "",
   field5: "",
+  field6: "",
   photo: "",
 };
 
