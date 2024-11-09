@@ -27,41 +27,12 @@ function preview(event, idName, cardClass) {
   }
 }
 
-const objectCreated = (event) => {
-  const idInput = event.target.id;
-  if (event.target.id === "nameAddressee") {
-    dataForm.field2 = event.target.value;
-  } else if (event.target.id === "message") {
-    dataForm.field3 = event.target.value;
-  } else if (event.target.id === "phone") {
-    dataForm.field4 = event.target.value;
-  } else if (event.target.id === "nameSender") {
-    dataForm.field5 = event.target.value;
-  } else if (event.target.id === "insta") {
-    dataForm.field6 = event.target.value;
-  } else if (event.target.id === "photo") {
-    dataForm.photo = event.target.value;
-  }
-};
-
-const dataForm = {
-  field1: 1,
-  field2: "",
-  field3: "",
-  field4: "",
-  field5: "",
-  field6: "",
-  photo: "",
-};
-
 formRellena.addEventListener("input", (event) => {
   preview(event, "nameAddressee", cardNameAddressee);
   preview(event, "message", cardMessage);
-  preview(event, "img", cardPhotoImg);
   preview(event, "phone", cardPhone);
   preview(event, "nameSender", cardNameSender);
   preview(event, "insta", cardInsta);
-  objectCreated(event);
 });
 
 // FUNCIONALIDAD DEL BOTÓN RESET (está fuera del form y hay que enlazarlo)

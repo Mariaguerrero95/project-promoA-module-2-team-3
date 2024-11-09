@@ -6,10 +6,30 @@ const buttonCardCreate = document.querySelector(".js-card-create");
 const openShare = document.querySelector(".js-share-open");
 const linkCard = document.querySelector(".js-link");
 
+const dataForm = {
+  field1: 1,
+  field2: "",
+  field3: "",
+  field4: "",
+  field5: "",
+  field6: "",
+  photo: "",
+};
+
+const objectCreated = () => {
+  dataForm.field2 = inputNameAddressee.value;
+  dataForm.field3 = inputMessage.value;
+  dataForm.field4 = inputPhone.value;
+  dataForm.field5 = inputNameSender.value;
+  dataForm.field6 = inputInsta.value;
+  dataForm.photo = fr.result;
+};
+
 function handleCreateCard(event) {
   event.preventDefault();
-
+  objectCreated();
   console.log("JSON.stringify(dataForm),", JSON.stringify(dataForm));
+
   fetch("https://dev.adalab.es/api/info/data", {
     method: "POST",
     body: JSON.stringify(dataForm),

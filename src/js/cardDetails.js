@@ -16,7 +16,7 @@ fetch(`https://dev.adalab.es/api/info/${id}`)
     console.log(cardData);
     cardNameAddressee.innerHTML = cardData.field2;
     cardMessage.innerHTML = cardData.field3;
-    cardPhotoImg.innerHTML = cardData.photo;
+    cardPhotoImg.style.backgroundImage = `url(${cardData.photo})`;
     cardPhone.innerHTML = cardData.field4;
     cardNameSender.innerHTML = cardData.field5;
     cardInsta.innerHTML = cardData.field6;
