@@ -7,6 +7,8 @@ const openShare = document.querySelector(".js-share-open");
 const linkCard = document.querySelector(".js-link");
 let paragraphUrlCard = document.querySelector(".js-urlCard");
 
+const btnTwitter = document.querySelector(".js-twitter");
+
 const dataForm = {
   field1: 1,
   field2: "",
@@ -23,7 +25,7 @@ const objectCreated = () => {
   dataForm.field4 = inputPhone.value;
   dataForm.field5 = inputNameSender.value;
   dataForm.field6 = inputInsta.value;
-  dataForm.field7 = "";
+  dataForm.field7 = ""; // fondo de la tarjeta
   dataForm.photo = fr.result;
 };
 
@@ -41,7 +43,11 @@ function handleCreateCard(event) {
       const idCard = data.infoID;
 
       linkCard.href = `./cardDetails.html?id=${idCard}`;
+
+      btnTwitter.href = `https://twitter.com/intent/tweet?text=He%20creado%20esta%20tarjeta%20para%20que%20no%20te%20olvides%20de%20mi%20${inputNameAddressee.value}&url=./cardDetails.html?id=${idCard}`;
+
       linkCard.classList.remove("collapse");
+
       paragraphUrlCard.innerHTML = linkCard.href;
 
       openShare.classList.remove("collapse");
@@ -49,6 +55,10 @@ function handleCreateCard(event) {
 }
 
 buttonCardCreate.addEventListener("click", handleCreateCard);
+
+function linkTwitter() {
+  console.log(btnTwitter.href);
+}
 
 /*Cuando la usuaria haga click en crear tarjeta
     - enviar los datos del objeto al servidor (https://dev.adalab.es/api/info/data)
