@@ -44,7 +44,7 @@ function handleCreateCard(event) {
 
       linkCard.href = `./cardDetails.html?id=${idCard}`;
 
-      btnTwitter.href = `https://twitter.com/intent/tweet?text=He%20creado%20esta%20tarjeta%20para%20que%20no%20te%20olvides%20de%20mi%20${inputNameAddressee.value}&url=./cardDetails.html?id=${idCard}`;
+      btnTwitter.href = `https://twitter.com/intent/tweet?text=He%20creado%20esta%20tarjeta%20para%20que%20no%20te%20olvides%20de%20mi,%20${dataForm.field2}&url=${linkCard.href}`;
 
       linkCard.classList.remove("collapse");
 
