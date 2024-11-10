@@ -8,6 +8,7 @@ const linkCard = document.querySelector(".js-link");
 let paragraphUrlCard = document.querySelector(".js-urlCard");
 
 const btnTwitter = document.querySelector(".js-twitter");
+const btnWhatsApp = document.querySelector(".js-whatsapp");
 
 const dataForm = {
   field1: 1,
@@ -41,24 +42,27 @@ function handleCreateCard(event) {
     .then((response) => response.json())
     .then((data) => {
       const idCard = data.infoID;
-
-      linkCard.href = `./cardDetails.html?id=${idCard}`;
-
-      btnTwitter.href = `https://twitter.com/intent/tweet?text=He%20creado%20esta%20tarjeta%20para%20que%20no%20te%20olvides%20de%20mi,%20${dataForm.field2}&url=${linkCard.href}`;
-
       linkCard.classList.remove("collapse");
 
-      paragraphUrlCard.innerHTML = linkCard.href;
+      if (idCard === undefined) {
+        paragraphUrlCard.style.color = "red";
+        paragraphUrlCard.innerHTML =
+          "Ha ocurrido un error, es probable que tu foto ocupe demasiado, prueba con una de menor tamaño";
+      } else {
+        linkCard.href = `./cardDetails.html?id=${idCard}`;
 
-      openShare.classList.remove("collapse");
+        paragraphUrlCard.innerHTML = linkCard.href;
+
+        openShare.classList.remove("collapse");
+
+        btnTwitter.href = `https://twitter.com/intent/tweet?text=He%20creado%20esta%20tarjeta%20para%20que%20no%20te%20olvides%20de%20mi,%20${dataForm.field2}&url=${linkCard.href}`;
+
+        btnWhatsApp.href = `https://api.whatsapp.com/send?text=He%20creado%20esta%20tarjeta%20para%20que%20no%20te%20olvides%20de%20mi,%20${dataForm.field2}%20${linkCard.href}`;
+      }
     });
 }
 
 buttonCardCreate.addEventListener("click", handleCreateCard);
-
-function linkTwitter() {
-  console.log(btnTwitter.href);
-}
 
 /*Cuando la usuaria haga click en crear tarjeta
     - enviar los datos del objeto al servidor (https://dev.adalab.es/api/info/data)
