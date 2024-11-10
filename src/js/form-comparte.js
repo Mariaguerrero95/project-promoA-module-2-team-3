@@ -9,6 +9,7 @@ let paragraphUrlCard = document.querySelector(".js-urlCard");
 
 const btnTwitter = document.querySelector(".js-twitter");
 const btnWhatsApp = document.querySelector(".js-whatsapp");
+const btnEmail = document.querySelector(".js-email");
 
 const dataForm = {
   field1: 1,
@@ -50,7 +51,7 @@ function handleCreateCard(event) {
           "Ha ocurrido un error, es probable que tu foto ocupe demasiado, prueba con una de menor tamaño";
       } else {
         linkCard.href = `./cardDetails.html?id=${idCard}`;
-
+        paragraphUrlCard.style.color = "blue";
         paragraphUrlCard.innerHTML = linkCard.href;
 
         openShare.classList.remove("collapse");
@@ -58,6 +59,8 @@ function handleCreateCard(event) {
         btnTwitter.href = `https://twitter.com/intent/tweet?text=He%20creado%20esta%20tarjeta%20para%20que%20no%20te%20olvides%20de%20mi,%20${dataForm.field2}&url=${linkCard.href}`;
 
         btnWhatsApp.href = `https://api.whatsapp.com/send?text=He%20creado%20esta%20tarjeta%20para%20que%20no%20te%20olvides%20de%20mi,%20${dataForm.field2}%20${linkCard.href}`;
+
+        btnEmail.href = `mailto:?subject=Tarjeta%20hay%20un%20amigo%20en%20mi&body=He%20creado%20esta%20tarjeta%20para%20que%20no%20te%20olvides%20de%20mi,%20${dataForm.field2}:%20${linkCard.href}`;
       }
     });
 }
