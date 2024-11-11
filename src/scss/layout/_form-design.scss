@@ -5,6 +5,7 @@
 .fill-form {
   display: flex;
   flex-direction: column;
+  gap: 20px;
 }
 
 .title-icon {
@@ -28,10 +29,10 @@
   background-size: cover;
 }
 .card-background-espacio {
-  background-image: url("/images/fondo5.avif");
+  background-image: url("/images/espacio.jpg");
   background-size: cover;
 }
 .card-background-forky {
-  background-image: url("/images/fondo3.jpg");
+  background-image: url("/images/forky.jpg");
   background-size: cover;
 }

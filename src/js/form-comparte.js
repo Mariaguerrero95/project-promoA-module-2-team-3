@@ -18,6 +18,7 @@ const dataForm = {
   field4: "",
   field5: "",
   field6: "",
+  field7: "",
   photo: "",
 };
 

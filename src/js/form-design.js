@@ -4,18 +4,14 @@
     - Si la usuaria hace click, se cambia el fondo de pantalla deseado
 */
 const fieldset = document.querySelector(".js-fieldset-diseña");
-const background1 = document.querySelector(".js-nubes");
-const background2 = document.querySelector(".js-espacio");
-const background3 = document.querySelector(".js-forky");
+const backgroundNubes = document.querySelector(".js-nubes");
+const backgroundEspacio = document.querySelector(".js-espacio");
+const backgroundForky = document.querySelector(".js-forky");
 
 const legendDesign = document.querySelector(".js-legend-design");
 const formDesign = document.querySelector(".js-form-design");
 const arrowDesign = document.querySelector(".js-arrow");
 
-// background1.addEventListener("click", () => {
-//     card1.classList.toggle ("card-background-nubes");
-
-// })
 /*Crear una función que reciba qué casilla se marca, desmarque las demás y pinte la clase correspondiente a esa casilla en el fondo de la tarjeta
 Si marca el fondo azul
     se pinta el azul
@@ -29,16 +25,19 @@ PASOS
 */
 
 const changeFoundImg = (event) => {
-  if (event.target.id === "optionNubes") {
+  if (event.target.id === "nubes") {
     cardFoundImg.classList.add("card-background-nubes");
+    // cardFoundImg.id = "nubes";
     cardFoundImg.classList.remove("card-background-espacio");
     cardFoundImg.classList.remove("card-background-forky");
-  } else if (event.target.id === "optionEspacio") {
+  } else if (event.target.id === "espacio") {
     cardFoundImg.classList.add("card-background-espacio");
+    // cardFoundImg.id = "espacio";
     cardFoundImg.classList.remove("card-background-nubes");
     cardFoundImg.classList.remove("card-background-forky");
-  } else if (event.target.id === "optionForky") {
+  } else if (event.target.id === "forky") {
     cardFoundImg.classList.add("card-background-forky");
+    // cardFoundImg.id = "forky";
     cardFoundImg.classList.remove("card-background-espacio");
     cardFoundImg.classList.remove("card-background-nubes");
   }

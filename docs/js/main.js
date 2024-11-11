@@ -8,15 +8,15 @@ const a = document.querySelector(".js-form-design"),
   c = document.querySelector(".js-arrow");
 h.addEventListener("click", (e) => {
   console.log("event"),
-    e.target.id === "optionNubes"
+    e.target.id === "nubes"
       ? (t.classList.add("card-background-nubes"),
         t.classList.remove("card-background-espacio"),
         t.classList.remove("card-background-forky"))
-      : e.target.id === "optionEspacio"
+      : e.target.id === "espacio"
       ? (t.classList.add("card-background-espacio"),
         t.classList.remove("card-background-nubes"),
         t.classList.remove("card-background-forky"))
-      : e.target.id === "optionForky" &&
+      : e.target.id === "forky" &&
         (t.classList.add("card-background-forky"),
         t.classList.remove("card-background-espacio"),
         t.classList.remove("card-background-nubes"));
