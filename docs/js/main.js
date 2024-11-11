@@ -1,24 +1,24 @@
 const q = document.querySelector(".js-div-container__form"),
   h = document.querySelector(".js-fieldset-diseña");
 document.querySelector(".js-nubes");
-document.querySelector(".js-naves");
+document.querySelector(".js-espacio");
 document.querySelector(".js-forky");
 document.querySelector(".js-legend-design");
 const a = document.querySelector(".js-form-design"),
   c = document.querySelector(".js-arrow");
 h.addEventListener("click", (e) => {
   console.log("event"),
-    e.target.id === "option1"
+    e.target.id === "optionNubes"
       ? (t.classList.add("card-background-nubes"),
-        t.classList.remove("card-background-naves"),
+        t.classList.remove("card-background-espacio"),
         t.classList.remove("card-background-forky"))
-      : e.target.id === "option2"
-      ? (t.classList.add("card-background-naves"),
+      : e.target.id === "optionEspacio"
+      ? (t.classList.add("card-background-espacio"),
         t.classList.remove("card-background-nubes"),
         t.classList.remove("card-background-forky"))
-      : e.target.id === "option3" &&
+      : e.target.id === "optionForky" &&
         (t.classList.add("card-background-forky"),
-        t.classList.remove("card-background-naves"),
+        t.classList.remove("card-background-espacio"),
         t.classList.remove("card-background-nubes"));
 });
 const b = document.querySelector(".js-fieldset-rellena");
@@ -122,7 +122,7 @@ _.addEventListener("click", () => {
     (p.textContent = "@mrpotato"),
     (f.style.backgroundImage = 'url("images/mr-potato.png")'),
     t.classList.add("card-background-nubes"),
-    t.classList.remove("card-background-naves"),
+    t.classList.remove("card-background-espacio"),
     t.classList.remove("card-background-forky"),
     q.reset(),
     (g.style.backgroundImage = "");

@@ -5,7 +5,7 @@
 */
 const fieldset = document.querySelector(".js-fieldset-diseña");
 const background1 = document.querySelector(".js-nubes");
-const background2 = document.querySelector(".js-naves");
+const background2 = document.querySelector(".js-espacio");
 const background3 = document.querySelector(".js-forky");
 
 const legendDesign = document.querySelector(".js-legend-design");
@@ -29,17 +29,17 @@ PASOS
 */
 
 const changeFoundImg = (event) => {
-  if (event.target.id === "option1") {
+  if (event.target.id === "optionNubes") {
     cardFoundImg.classList.add("card-background-nubes");
-    cardFoundImg.classList.remove("card-background-naves");
+    cardFoundImg.classList.remove("card-background-espacio");
     cardFoundImg.classList.remove("card-background-forky");
-  } else if (event.target.id === "option2") {
-    cardFoundImg.classList.add("card-background-naves");
+  } else if (event.target.id === "optionEspacio") {
+    cardFoundImg.classList.add("card-background-espacio");
     cardFoundImg.classList.remove("card-background-nubes");
     cardFoundImg.classList.remove("card-background-forky");
-  } else if (event.target.id === "option3") {
+  } else if (event.target.id === "optionForky") {
     cardFoundImg.classList.add("card-background-forky");
-    cardFoundImg.classList.remove("card-background-naves");
+    cardFoundImg.classList.remove("card-background-espacio");
     cardFoundImg.classList.remove("card-background-nubes");
   }
 };

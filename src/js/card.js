@@ -48,7 +48,7 @@ cardButtonReset.addEventListener("click", () => {
   cardInsta.textContent = "@mrpotato";
   cardPhotoImg.style.backgroundImage = 'url("images/mr-potato.png")';
   cardFoundImg.classList.add("card-background-nubes");
-  cardFoundImg.classList.remove("card-background-naves");
+  cardFoundImg.classList.remove("card-background-espacio");
   cardFoundImg.classList.remove("card-background-forky");
   // Resetear los valores de los campos del formulario
   formContainer.reset();
