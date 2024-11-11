@@ -27,17 +27,17 @@ PASOS
 const changeFoundImg = (event) => {
   if (event.target.id === "nubes") {
     cardFoundImg.classList.add("card-background-nubes");
-    // cardFoundImg.id = "nubes";
+    cardFoundImg.id = "nubes";
     cardFoundImg.classList.remove("card-background-espacio");
     cardFoundImg.classList.remove("card-background-forky");
   } else if (event.target.id === "espacio") {
     cardFoundImg.classList.add("card-background-espacio");
-    // cardFoundImg.id = "espacio";
+    cardFoundImg.id = "espacio";
     cardFoundImg.classList.remove("card-background-nubes");
     cardFoundImg.classList.remove("card-background-forky");
   } else if (event.target.id === "forky") {
     cardFoundImg.classList.add("card-background-forky");
-    // cardFoundImg.id = "forky";
+    cardFoundImg.id = "forky";
     cardFoundImg.classList.remove("card-background-espacio");
     cardFoundImg.classList.remove("card-background-nubes");
   }

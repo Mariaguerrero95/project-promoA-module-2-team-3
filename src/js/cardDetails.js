@@ -22,5 +22,5 @@ fetch(`https://dev.adalab.es/api/info/${id}`)
     cardPhone.innerHTML = cardData.field4;
     cardNameSender.innerHTML = cardData.field5;
     cardInsta.innerHTML = cardData.field6;
-    cardFoundImg.style.backgroundImage = cardData.field7;
+    cardFoundImg.style.backgroundImage = `url(${cardData.field7})`;
   });
