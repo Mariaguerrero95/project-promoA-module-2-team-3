@@ -1,17 +1,56 @@
 body {
-  &:before {
+  margin: 0px;
+}
+.background-main {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  &::before {
     content: "";
-    position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
+    margin: 0;
     background-image: url(../images/malo.jpg);
+    position: absolute;
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    min-height: 100vh;
+    height: 100%;
+    opacity: 0.5;
+    z-index: -1;
+  }
+}
+
+.background-form {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  &::before {
+    content: "";
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0;
+    background-image: url(../images/malo.jpg);
+    position: absolute;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
     opacity: 0.5;
     z-index: -1;
   }
