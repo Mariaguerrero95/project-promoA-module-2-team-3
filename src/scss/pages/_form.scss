@@ -12,7 +12,8 @@
   }
 
   @media (min-width: 1200px) {
-    gap: 200px;
+    gap: 0px;
+    justify-content: center;
   }
 
   &__form {

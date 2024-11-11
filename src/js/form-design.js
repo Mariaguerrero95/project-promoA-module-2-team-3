@@ -4,9 +4,9 @@
     - Si la usuaria hace click, se cambia el fondo de pantalla deseado
 */
 const fieldset = document.querySelector(".js-fieldset-diseña");
-const background1 = document.querySelector(".js-azul");
-const background2 = document.querySelector(".js-amarillo");
-const background3 = document.querySelector(".js-verde");
+const background1 = document.querySelector(".js-nubes");
+const background2 = document.querySelector(".js-naves");
+const background3 = document.querySelector(".js-forky");
 
 const legendDesign = document.querySelector(".js-legend-design");
 const formDesign = document.querySelector(".js-form-design");
