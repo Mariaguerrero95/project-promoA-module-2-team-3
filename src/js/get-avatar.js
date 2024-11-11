@@ -14,7 +14,7 @@ const profilePreview = document.querySelector('.js-card-photo-img');
  * al tener los datos listos
  * @param {evento} e 
  */
-function getImage(e){
+function getImage(e) {
   const myFile = e.currentTarget.files[0];
   fr.addEventListener('load', writeImage);
   fr.readAsDataURL(myFile);
