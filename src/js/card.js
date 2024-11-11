@@ -10,6 +10,7 @@ const cardNameSender = document.querySelector(".js-card-nameSender");
 const cardInsta = document.querySelector(".js-card-insta");
 const cardButtonReset = document.querySelector(".js-button-reset");
 
+
 /* PREVISUALIZACIÓN
 Cuando la usuaria escriba en el input de rellena, quiero que se previsualice en el card:
 1. Recoger todos los inputs de rellena
@@ -87,5 +88,24 @@ const dataForm = {
   photo: "",
 };
 /*CREAR TARJETA Y MOSTRARLA EN NUEVA PÁGINA
+GUARDO LOS DATOS DE LA USUARIA EN EL SERVIDOR
+Cuando la usuaria haga click en Crear Tarjet:
+  - Enviar los datos del formulario al servidor (POST)
+      devolverá un id
+      recoger el id que me devuelve el servidor
+      Mostrar el enlace de la nueva página
+      Modificar la dirección de ese enlace (enlace dinámico)
+OBTENGO LOS DATOS DEL SERVIDOR PARA PINTAR LA TARJETA
+Crear una página nueva de html para mostrar la tarjeta creada
+  - Recoger el id de la url para saber qué dato pintar
+  - Pedir al servidor los datos de esa tarjeta
+  - Pinto esos datos en el html
+*/
+
+/*Cuando la usuaria haga click en crear tarjeta 
+    realizo la petición al servidor para enviar los datos escritos en el formulario
 
 */
+
+
+
