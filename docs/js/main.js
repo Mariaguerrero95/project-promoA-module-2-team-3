@@ -13,13 +13,13 @@ h.addEventListener("click", (e) => {
         t.classList.remove("card-background-naves"),
         t.classList.remove("card-background-forky"))
       : e.target.id === "option2"
-      ? (t.classList.add("card-background-naves"),
-        t.classList.remove("card-background-nubes"),
-        t.classList.remove("card-background-forky"))
-      : e.target.id === "option3" &&
-        (t.classList.add("card-background-forky"),
-        t.classList.remove("card-background-naves"),
-        t.classList.remove("card-background-nubes"));
+        ? (t.classList.add("card-background-naves"),
+          t.classList.remove("card-background-nubes"),
+          t.classList.remove("card-background-forky"))
+        : e.target.id === "option3" &&
+          (t.classList.add("card-background-forky"),
+          t.classList.remove("card-background-naves"),
+          t.classList.remove("card-background-nubes"));
 });
 const b = document.querySelector(".js-fieldset-rellena");
 document.querySelector(".js-input-nameAddressee");
@@ -55,19 +55,19 @@ const I = document.querySelectorAll(".js-legend"),
           d.classList.add("collapse"),
           u.classList.remove("rotate"))
         : e.currentTarget.classList.contains("js-legend-fillout")
-        ? (n.classList.toggle("collapse"),
-          l.classList.toggle("rotate"),
-          a.classList.add("collapse"),
-          c.classList.remove("rotate"),
-          d.classList.add("collapse"),
-          u.classList.remove("rotate"))
-        : e.currentTarget.classList.contains("js-legend-share") &&
-          (d.classList.toggle("collapse"),
-          u.classList.toggle("rotate"),
-          a.classList.add("collapse"),
-          c.classList.remove("rotate"),
-          n.classList.add("collapse"),
-          l.classList.remove("rotate"));
+          ? (n.classList.toggle("collapse"),
+            l.classList.toggle("rotate"),
+            a.classList.add("collapse"),
+            c.classList.remove("rotate"),
+            d.classList.add("collapse"),
+            u.classList.remove("rotate"))
+          : e.currentTarget.classList.contains("js-legend-share") &&
+            (d.classList.toggle("collapse"),
+            u.classList.toggle("rotate"),
+            a.classList.add("collapse"),
+            c.classList.remove("rotate"),
+            n.classList.add("collapse"),
+            l.classList.remove("rotate"));
   };
 for (const e of I) console.log("legend: ", e), e.addEventListener("click", E);
 const o = new FileReader(),
