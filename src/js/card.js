@@ -86,3 +86,6 @@ const dataForm = {
   field5: "",
   photo: "",
 };
+/*CREAR TARJETA Y MOSTRARLA EN NUEVA PÁGINA
+
+*/
