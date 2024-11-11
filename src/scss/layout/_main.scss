@@ -29,6 +29,14 @@ body {
   }
 }
 
+.content-main {
+  height: 100%;
+  margin-top: 50%;
+  @media (min-width: 1024px) {
+    margin-top: 15%;
+  }
+}
+
 .background-form {
   position: relative;
   height: 100%;
@@ -53,6 +61,15 @@ body {
     height: 100%;
     opacity: 0.5;
     z-index: -1;
+  }
+  @media (min-width: 768px) {
+    height: 100vh;
+  }
+  @media (min-width: 1024px) {
+    height: 100%;
+  }
+  @media (min-width: 1200px) {
+    height: 100vh;
   }
 }
 main {

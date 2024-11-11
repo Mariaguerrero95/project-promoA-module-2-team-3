@@ -8,6 +8,7 @@ const cardPhotoImg = document.querySelector(".js-card-photo-img");
 const cardPhone = document.querySelector(".js-card-phone");
 const cardNameSender = document.querySelector(".js-card-nameSender");
 const cardInsta = document.querySelector(".js-card-insta");
+const cardFoundImg = document.querySelector(".js-card-found-img");
 
 fetch(`https://dev.adalab.es/api/info/${id}`)
   .then((response) => response.json())
@@ -20,4 +21,5 @@ fetch(`https://dev.adalab.es/api/info/${id}`)
     cardPhone.innerHTML = cardData.field4;
     cardNameSender.innerHTML = cardData.field5;
     cardInsta.innerHTML = cardData.field6;
+    cardFoundImg.style.backgroundImage = cardData.photo;
   });

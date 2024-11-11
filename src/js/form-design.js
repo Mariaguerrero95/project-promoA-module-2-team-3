@@ -13,7 +13,7 @@ const formDesign = document.querySelector(".js-form-design");
 const arrowDesign = document.querySelector(".js-arrow");
 
 // background1.addEventListener("click", () => {
-//     card1.classList.toggle ("card-background-blue");
+//     card1.classList.toggle ("card-background-nubes");
 
 // })
 /*Crear una función que reciba qué casilla se marca, desmarque las demás y pinte la clase correspondiente a esa casilla en el fondo de la tarjeta
@@ -28,18 +28,20 @@ PASOS
 - Cuando la usuaria haga click en formulario
 */
 
-fieldset.addEventListener("click", (event) => {
+const changeFoundImg = (event) => {
   if (event.target.id === "option1") {
-    cardFoundImg.classList.add("card-background-blue");
-    cardFoundImg.classList.remove("card-background-yellow");
-    cardFoundImg.classList.remove("card-background-green");
+    cardFoundImg.classList.add("card-background-nubes");
+    cardFoundImg.classList.remove("card-background-naves");
+    cardFoundImg.classList.remove("card-background-forky");
   } else if (event.target.id === "option2") {
-    cardFoundImg.classList.add("card-background-yellow");
-    cardFoundImg.classList.remove("card-background-blue");
-    cardFoundImg.classList.remove("card-background-green");
+    cardFoundImg.classList.add("card-background-naves");
+    cardFoundImg.classList.remove("card-background-nubes");
+    cardFoundImg.classList.remove("card-background-forky");
   } else if (event.target.id === "option3") {
-    cardFoundImg.classList.add("card-background-green");
-    cardFoundImg.classList.remove("card-background-yellow");
-    cardFoundImg.classList.remove("card-background-blue");
+    cardFoundImg.classList.add("card-background-forky");
+    cardFoundImg.classList.remove("card-background-naves");
+    cardFoundImg.classList.remove("card-background-nubes");
   }
-});
+};
+
+fieldset.addEventListener("click", changeFoundImg);

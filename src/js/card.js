@@ -47,9 +47,9 @@ cardButtonReset.addEventListener("click", () => {
   cardNameSender.textContent = "Mr. Potato";
   cardInsta.textContent = "@mrpotato";
   cardPhotoImg.style.backgroundImage = 'url("images/mr-potato.png")';
-  cardFoundImg.classList.add("card-background-blue");
-  cardFoundImg.classList.remove("card-background-yellow");
-  cardFoundImg.classList.remove("card-background-green");
+  cardFoundImg.classList.add("card-background-nubes");
+  cardFoundImg.classList.remove("card-background-naves");
+  cardFoundImg.classList.remove("card-background-forky");
   // Resetear los valores de los campos del formulario
   formContainer.reset();
   // nameAddresseeInput.value = "";
