@@ -47,8 +47,7 @@ function handleCreateCard(event) {
 
       if (idCard === undefined) {
         paragraphUrlCard.style.color = "red";
-        paragraphUrlCard.innerHTML =
-          "Ha ocurrido un error, es probable que tu foto ocupe demasiado, prueba con una de menor tamaño";
+        paragraphUrlCard.innerHTML = "Ha ocurrido un error, inténtalo de nuevo";
       } else {
         linkCard.href = `./cardDetails.html?id=${idCard}`;
         paragraphUrlCard.style.color = "blue";
