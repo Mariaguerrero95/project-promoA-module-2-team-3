@@ -18,12 +18,13 @@
     />
 
     
-    <link rel="stylesheet" href="./assets/main-442b239a.css">
+    <link rel="stylesheet" href="./assets/main-d5cd931c.css">
   </head>
   <body>
-    <div class="div-container">
-      <form class="div-container__form js-div-container__form" action="">
-        <fieldset class="fieldset js-fieldset-diseña">
+    <div class="background-form">
+      <div class="div-container">
+        <form class="div-container__form js-div-container__form" action="">
+          <fieldset class="fieldset js-fieldset-diseña">
   <legend class="title-icon js-legend-design js-design-drop-down js-legend">
     <div class="image-title js-design-drop-down">
       <i class="fa-regular fa-object-ungroup js-design-drop-down"></i>
@@ -66,7 +67,7 @@
 
 </fieldset>
 
-        <fieldset class="js-fieldset-rellena">
+          <fieldset class="js-fieldset-rellena">
   <legend
     class="symbol-title-fill-out js-legend-fillout js-fillout-drop-down js-legend"
   >
@@ -168,7 +169,7 @@
   </div>
 </fieldset>
 
-        <fieldset>
+          <fieldset>
   <legend class="drop-down-share js-legend-share js-share-drop-down js-legend">
     <div class="drop-down-share__text js-share-drop-down">
       <i class="fa-solid fa-share-nodes js-share-drop-down"></i>
@@ -185,50 +186,49 @@
       <button class="card__create__button js-card-create">Crear tarjeta</button>
     </div>
 
+    <a class="js-link linkVerTarjeta collapse" target="_blank" href="">
+      <p>Ver tarjeta</p>
+    </a>
+    <p class="js-urlCard"></p>
+
     <div class="js-share-open collapse">
       <div class="anchors__icon">
-        <a href="#">Por Twitter</a>
-        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        <a class="js-twitter" target="_blank" noreferrer href="">Por Twitter</a>
+        <a class="js-twitter" target="_blank" noreferrer href=""
+          ><i class="fa-brands fa-twitter"></i
+        ></a>
       </div>
 
       <div class="anchors__icon">
-        <a href="mailto:">Por e-mail</a>
-        <a href="mailto:"> <i class="fa-regular fa-envelope"></i></a>
-      </div>
-
-      <div class="anchors__icon">
-        <a href="https://www.instagram.com/" target="_blank" noreferrer
+        <a class="js-instagram" target="_blank" noreferrer href=""
           >Por instagram</a
         >
-        <a href="https://www.instagram.com/" target="_blank" noreferrer
+        <a class="js-instagram" target="_blank" noreferrer href=""
           ><i class="fa-brands fa-instagram"></i
         ></a>
       </div>
 
       <div class="anchors__icon">
-        <a href="https://web.whatsapp.com/" target="_blank" noreferrer
+        <a class="js-whatsapp" target="_blank" noreferrer href=""
           >Por WhatsApp</a
         >
-        <a href="https://web.whatsapp.com/" target="_blank" noreferrer
+        <a class="js-whatsapp" target="_blank" noreferrer href=""
           ><i class="fa-brands fa-whatsapp"></i
         ></a>
       </div>
-    </div>
 
-    <!--
-        El # se utiliza para crear un enlace que no navega a otra página, permitiendo que se ejecute una función de JavaScript en su lugar. 
-      <a>href="#" onclick="imprimirPagina(); return false;</a>
-      <script>
-          function imprimirPagina() {
-              window.print();
-          }
-      </script>
-    -->
+      <div class="anchors__icon">
+        <a class="js-email" target="_blank" noreferrer href="">Por e-mail</a>
+        <a class="js-email" target="_blank" noreferrer href="">
+          <i class="fa-regular fa-envelope"></i
+        ></a>
+      </div>
+    </div>
   </div>
 </fieldset>
 
-      </form>
-      <section class="section-card" >
+        </form>
+        <section class="section-card" >
   <button class="section-card__reset js-button-reset" type="reset">
     RESET
     <i class="fa-solid fa-trash-can"></i>
@@ -270,13 +270,14 @@
   </div>  
 </section>
 
-    </div>
-    <footer class="footer">
+      </div>
+      <footer class="footer">
   <div class="foot">
     <p class="name">Hasta el infinito © 2024</p>
   </div>
 </footer>
 
+    </div>
     <script type="text/javascript" src="./js/main.js"></script>
   </body>
 </html>
