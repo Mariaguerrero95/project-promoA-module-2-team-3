@@ -50,7 +50,7 @@ function handleCreateCard(event) {
         paragraphUrlCard.innerHTML = "Ha ocurrido un error, inténtalo de nuevo";
       } else {
         linkCard.href = `./cardDetails.html?id=${idCard}`;
-        paragraphUrlCard.style.color = "blue";
+        paragraphUrlCard.style.color = "nubes";
         paragraphUrlCard.innerHTML = linkCard.href;
 
         openShare.classList.remove("collapse");

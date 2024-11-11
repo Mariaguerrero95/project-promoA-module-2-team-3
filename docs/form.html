@@ -17,205 +17,218 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
     />
 
-    
-    <link rel="stylesheet" href="./assets/main-442b239a.css">
+    <link rel="stylesheet" href="./assets/main-442b239a.css" />
   </head>
   <body>
     <div class="div-container">
       <form class="div-container__form js-div-container__form" action="">
         <fieldset class="fieldset js-fieldset-diseña">
-  <legend class="title-icon js-legend-design js-design-drop-down js-legend">
-    <div class="image-title js-design-drop-down">
-      <i class="fa-regular fa-object-ungroup js-design-drop-down"></i>
-      <p class="js-design-drop-down">Diseña</p>
-    </div>
-    <div class="js-arrow js-design-drop-down">
-      <i class="fa-solid fa-chevron-down js-design-drop-down"></i>
-    </div>
-  </legend>
+          <legend
+            class="title-icon js-legend-design js-design-drop-down js-legend"
+          >
+            <div class="image-title js-design-drop-down">
+              <i class="fa-regular fa-object-ungroup js-design-drop-down"></i>
+              <p class="js-design-drop-down">Diseña</p>
+            </div>
+            <div class="js-arrow js-design-drop-down">
+              <i class="fa-solid fa-chevron-down js-design-drop-down"></i>
+            </div>
+          </legend>
 
-    <div class="fill-form js-form-design collapse">
-      <label for="option1">
-        <input class="js-azul"
-          id="option1"
-          type="radio"
-          value="choosecolor"
-          name="background"
-        />
-        Fondo 1
-      </label>
-      <label for="option2">
-        <input class="js-amarillo"
-          id="option2"
-          type="radio"
-          value="choosecolor"
-          name="background"
-        />
-        Fondo 2
-      </label>
-      <label for="option3">
-        <input class="js-verde"
-          id="option3"
-          type="radio"
-          value="choosecolor"
-          name="background"
-        />
-        Fondo 3
-      </label>
-    </div>
-
-</fieldset>
+          <div class="fill-form js-form-design collapse">
+            <label for="option1">
+              <input
+                class="js-azul"
+                id="option1"
+                type="radio"
+                value="choosecolor"
+                name="background"
+              />
+              Fondo 1
+            </label>
+            <label for="option2">
+              <input
+                class="js-amarillo"
+                id="option2"
+                type="radio"
+                value="choosecolor"
+                name="background"
+              />
+              Fondo 2
+            </label>
+            <label for="option3">
+              <input
+                class="js-verde"
+                id="option3"
+                type="radio"
+                value="choosecolor"
+                name="background"
+              />
+              Fondo 3
+            </label>
+          </div>
+        </fieldset>
 
         <fieldset class="js-fieldset-rellena">
-  <legend
-    class="symbol-title-fill-out js-legend-fillout js-fillout-drop-down js-legend"
-  >
-    <div class="fill-out-text js-fillout-drop-down">
-      <i class="fa-regular fa-keyboard js-fillout-drop-down"></i>
-      <p class="js-fillout-drop-down">RELLENA</p>
-    </div>
+          <legend
+            class="symbol-title-fill-out js-legend-fillout js-fillout-drop-down js-legend"
+          >
+            <div class="fill-out-text js-fillout-drop-down">
+              <i class="fa-regular fa-keyboard js-fillout-drop-down"></i>
+              <p class="js-fillout-drop-down">RELLENA</p>
+            </div>
 
-    <div class="down-arrow js-arrow-fillout js-fillout-drop-down rotate">
-      <i class="fa-solid fa-chevron-down js-fillout-drop-down"></i>
-    </div>
-  </legend>
+            <div
+              class="down-arrow js-arrow-fillout js-fillout-drop-down rotate"
+            >
+              <i class="fa-solid fa-chevron-down js-fillout-drop-down"></i>
+            </div>
+          </legend>
 
-  <div class="fillout-form js-form-fillout">
-    <div class="fillout-form_input">
-      <label for="nameAddressee">Destinatario</label>
-      <input
-        id="nameAddressee"
-        class="js-input-nameAddressee"
-        name="nameAddressee"
-        type="text"
-        placeholder="To: Buddy"
-        required
-      />
-    </div>
-    <div class="fillout-form_input">
-      <label for="message">Quiero decirte que:</label>
-      <textarea
-        id="message"
-        class="js-input-message"
-        name="message"
-        type="text"
-        maxlength="220"
-        required
-        placeholder="Te voy a echar mucho de menos"
-      >
-      </textarea>
-    </div>
+          <div class="fillout-form js-form-fillout">
+            <div class="fillout-form_input">
+              <label for="nameAddressee">Destinatario</label>
+              <input
+                id="nameAddressee"
+                class="js-input-nameAddressee"
+                name="nameAddressee"
+                type="text"
+                placeholder="To: Buddy"
+                required
+              />
+            </div>
+            <div class="fillout-form_input">
+              <label for="message">Quiero decirte que:</label>
+              <textarea
+                id="message"
+                class="js-input-message"
+                name="message"
+                type="text"
+                maxlength="220"
+                required
+                placeholder="Te voy a echar mucho de menos"
+              >
+              </textarea>
+            </div>
 
-    <div class="fillout-form_input">
-      <div class="fillout-form_input-icono">
-        <i class="fa-solid fa-camera-retro"></i>
-        <label class="form__photolabel" for="photo"
-          >Selecciona una imagen</label
-        >
-      </div>
-      <div class="fillout-form_input__button">
-        <label for="photo" class="form__photobutton">Añadir imagen</label>
-        <input
-          id="photo"
-          class="form__photoinput js__profile-upload-btn"
-          name="photo"
-          type="file"
-          required
-        />
-        <span class="js__profile-image form__photothumb"></span>
-      </div>
-    </div>
+            <div class="fillout-form_input">
+              <div class="fillout-form_input-icono">
+                <i class="fa-solid fa-camera-retro"></i>
+                <label class="form__photolabel" for="photo"
+                  >Selecciona una imagen</label
+                >
+              </div>
+              <div class="fillout-form_input__button">
+                <label for="photo" class="form__photobutton"
+                  >Añadir imagen</label
+                >
+                <input
+                  id="photo"
+                  class="form__photoinput js__profile-upload-btn"
+                  name="photo"
+                  type="file"
+                  required
+                />
+                <span class="js__profile-image form__photothumb"></span>
+              </div>
+            </div>
 
-    <div class="fillout-form_input">
-      <label for="phone">Teléfono</label>
-      <input
-        id="phone"
-        class="fillout-form_input__phone js-input-phone"
-        name="phone"
-        type="text"
-        maxlength="9"
-        placeholder="612345678"
-        required
-      />
-    </div>
+            <div class="fillout-form_input">
+              <label for="phone">Teléfono</label>
+              <input
+                id="phone"
+                class="fillout-form_input__phone js-input-phone"
+                name="phone"
+                type="text"
+                maxlength="9"
+                placeholder="612345678"
+                required
+              />
+            </div>
 
-    <div class="fillout-form_input">
-      <label for="nameSender">Remitente</label>
-      <input
-        id="nameSender"
-        class="js-input-nameSender"
-        name="nameSender"
-        type="text"
-        placeholder="Mr. Potato"
-        required
-      />
-    </div>
+            <div class="fillout-form_input">
+              <label for="nameSender">Remitente</label>
+              <input
+                id="nameSender"
+                class="js-input-nameSender"
+                name="nameSender"
+                type="text"
+                placeholder="Mr. Potato"
+                required
+              />
+            </div>
 
-    <div class="fillout-form_input">
-      <div>
-        <i class="fa-brands fa-instagram"></i>
-        <label for="insta">Instagram</label>
-      </div>
-      <input
-        id="insta"
-        class="js-input-insta"
-        name="insta"
-        type="text"
-        placeholder="@mrpotato"
-        required
-      />
-    </div>
-  </div>
-</fieldset>
+            <div class="fillout-form_input">
+              <div>
+                <i class="fa-brands fa-instagram"></i>
+                <label for="insta">Instagram</label>
+              </div>
+              <input
+                id="insta"
+                class="js-input-insta"
+                name="insta"
+                type="text"
+                placeholder="@mrpotato"
+                required
+              />
+            </div>
+          </div>
+        </fieldset>
 
         <fieldset>
-  <legend class="drop-down-share js-legend-share js-share-drop-down js-legend">
-    <div class="drop-down-share__text js-share-drop-down">
-      <i class="fa-solid fa-share-nodes js-share-drop-down"></i>
-      <p class="js-share-drop-down">Comparte</p>
-    </div>
+          <legend
+            class="drop-down-share js-legend-share js-share-drop-down js-legend"
+          >
+            <div class="drop-down-share__text js-share-drop-down">
+              <i class="fa-solid fa-share-nodes js-share-drop-down"></i>
+              <p class="js-share-drop-down">Comparte</p>
+            </div>
 
-    <div class="drop-down-share__btn js-icon-arrow-share js-share-drop-down">
-      <i class="fa-solid fa-chevron-down js-share-drop-down"></i>
-    </div>
-  </legend>
+            <div
+              class="drop-down-share__btn js-icon-arrow-share js-share-drop-down"
+            >
+              <i class="fa-solid fa-chevron-down js-share-drop-down"></i>
+            </div>
+          </legend>
 
-  <div class="drop-down-share__anchors js-form-share collapse">
-    <div class="card__create js-card-create">
-      <button class="card__create__button js-card-create">Crear tarjeta</button>
-    </div>
+          <div class="drop-down-share__anchors js-form-share collapse">
+            <div class="card__create js-card-create">
+              <button class="card__create__button js-card-create">
+                Crear tarjeta
+              </button>
+            </div>
 
-    <div class="js-share-open collapse">
-      <div class="anchors__icon">
-        <a href="#">Por Twitter</a>
-        <a href="#"><i class="fa-brands fa-twitter"></i></a>
-      </div>
+            <div class="js-share-open collapse">
+              <div class="anchors__icon">
+                <a href="#">Por Twitter</a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              </div>
 
-      <div class="anchors__icon">
-        <a href="mailto:">Por e-mail</a>
-        <a href="mailto:"> <i class="fa-regular fa-envelope"></i></a>
-      </div>
+              <div class="anchors__icon">
+                <a href="mailto:">Por e-mail</a>
+                <a href="mailto:"> <i class="fa-regular fa-envelope"></i></a>
+              </div>
 
-      <div class="anchors__icon">
-        <a href="https://www.instagram.com/" target="_blank" noreferrer
-          >Por instagram</a
-        >
-        <a href="https://www.instagram.com/" target="_blank" noreferrer
-          ><i class="fa-brands fa-instagram"></i
-        ></a>
-      </div>
+              <div class="anchors__icon">
+                <a href="https://www.instagram.com/" target="_blank" noreferrer
+                  >Por instagram</a
+                >
+                <a href="https://www.instagram.com/" target="_blank" noreferrer
+                  ><i class="fa-brands fa-instagram"></i
+                ></a>
+              </div>
 
-      <div class="anchors__icon">
-        <a href="https://web.whatsapp.com/" target="_blank" noreferrer
-          >Por WhatsApp</a
-        >
-        <a href="https://web.whatsapp.com/" target="_blank" noreferrer
-          ><i class="fa-brands fa-whatsapp"></i
-        ></a>
-      </div>
-    </div>
+              <div class="anchors__icon">
+                <a href="https://web.whatsapp.com/" target="_blank" noreferrer
+                  >Por WhatsApp</a
+                >
+                <a href="https://web.whatsapp.com/" target="_blank" noreferrer
+                  ><i class="fa-brands fa-whatsapp"></i
+                ></a>
+              </div>
+            </div>
 
-    <!--
+            <!--
         El # se utiliza para crear un enlace que no navega a otra página, permitiendo que se ejecute una función de JavaScript en su lugar. 
       <a>href="#" onclick="imprimirPagina(); return false;</a>
       <script>
@@ -224,58 +237,54 @@
           }
       </script>
     -->
-  </div>
-</fieldset>
-
+          </div>
+        </fieldset>
       </form>
-      <section class="section-card" >
-  <button class="section-card__reset js-button-reset" type="reset">
-    RESET
-    <i class="fa-solid fa-trash-can"></i>
-  </button>
-  <div class="card">
-    <div class="card__found">
-      <div class="card__found__img js-card-found-img card-background-blue">
-      </div>
-    </div>
+      <section class="section-card">
+        <button class="section-card__reset js-button-reset" type="reset">
+          RESET
+          <i class="fa-solid fa-trash-can"></i>
+        </button>
+        <div class="card">
+          <div class="card__found">
+            <div
+              class="card__found__img js-card-found-img card-background-nubes"
+            ></div>
+          </div>
 
-    <div class="card__nameAddressee">
-      <p class="js-card-nameAddressee">To: Buddy</p>
-    </div>
+          <div class="card__nameAddressee">
+            <p class="js-card-nameAddressee">To: Buddy</p>
+          </div>
 
-    <div class="card__message">
-      <p class="js-card-message">
-        Te voy a echar mucho de menos
-      </p>
-    </div>
+          <div class="card__message">
+            <p class="js-card-message">Te voy a echar mucho de menos</p>
+          </div>
 
-    <div class="card__photo js__profile-preview">
-      <div class="card__photo__img js-card-photo-img">
-      </div>
-    </div>
+          <div class="card__photo js__profile-preview">
+            <div class="card__photo__img js-card-photo-img"></div>
+          </div>
 
-    <div class="card__footer">
-      <div class="card__footer__phone">
-        <i class="fa-solid fa-phone"></i>
-        <p class="js-card-phone">612345678</p>
-      </div>
-      <div class="card__footer__nameSender">
-        <p class="js-card-nameSender">Mr. Potato</p>
-      </div>
-      <div class="card__footer__insta">
-        <i class="fa-brands fa-instagram"></i>
-        <p class="js-card-insta">@mrpotato</p>
-      </div>
-    </div>
-  </div>  
-</section>
-
+          <div class="card__footer">
+            <div class="card__footer__phone">
+              <i class="fa-solid fa-phone"></i>
+              <p class="js-card-phone">612345678</p>
+            </div>
+            <div class="card__footer__nameSender">
+              <p class="js-card-nameSender">Mr. Potato</p>
+            </div>
+            <div class="card__footer__insta">
+              <i class="fa-brands fa-instagram"></i>
+              <p class="js-card-insta">@mrpotato</p>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
     <footer class="footer">
-  <div class="foot">
-    <p class="name">Hasta el infinito © 2024</p>
-  </div>
-</footer>
+      <div class="foot">
+        <p class="name">Hasta el infinito © 2024</p>
+      </div>
+    </footer>
 
     <script type="text/javascript" src="./js/main.js"></script>
   </body>
