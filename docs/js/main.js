@@ -115,7 +115,7 @@ b.addEventListener("input", (e) => {
     x(e);
 });
 _.addEventListener("click", () => {
-  (m.textContent = "To: Buddy"),
+  (m.textContent = "To: Woody"),
     (y.textContent = "Te voy a echar mucho de menos"),
     (S.textContent = "612345678"),
     (L.textContent = "Mr. Potato"),

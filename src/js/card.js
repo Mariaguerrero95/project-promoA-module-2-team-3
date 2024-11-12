@@ -41,7 +41,7 @@ const defaultImageURL = "images/mr-potato.png";
 
 // Resetear los valores de la card
 cardButtonReset.addEventListener("click", () => {
-  cardNameAddressee.textContent = "To: Buddy";
+  cardNameAddressee.textContent = "To: Woody";
   cardMessage.textContent = "Te voy a echar mucho de menos";
   cardPhone.textContent = "612345678";
   cardNameSender.textContent = "Mr. Potato";
