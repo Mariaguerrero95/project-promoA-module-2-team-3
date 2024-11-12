@@ -28,7 +28,7 @@ const objectCreated = () => {
   dataForm.field4 = inputPhone.value;
   dataForm.field5 = inputNameSender.value;
   dataForm.field6 = inputInsta.value;
-  dataForm.field7 = `/images/${cardFoundImg.id}.jpg`; // fondo de la tarjeta
+  dataForm.field7 = `project-promoA-module-2-team-3/images/${cardFoundImg.id}.jpg`; // fondo de la tarjeta
   dataForm.photo = fr.result;
 };
 
