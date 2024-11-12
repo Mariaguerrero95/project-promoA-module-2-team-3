@@ -2,6 +2,7 @@
 
 const urlParam = new URLSearchParams(window.location.search);
 const id = urlParam.get("id");
+
 const cardNameAddressee = document.querySelector(".js-card-nameAddressee");
 const cardMessage = document.querySelector(".js-card-message");
 const cardPhotoImg = document.querySelector(".js-card-photo-img");
@@ -21,5 +22,5 @@ fetch(`https://dev.adalab.es/api/info/${id}`)
     cardPhone.innerHTML = cardData.field4;
     cardNameSender.innerHTML = cardData.field5;
     cardInsta.innerHTML = cardData.field6;
-    cardFoundImg.style.backgroundImage = cardData.photo;
+    cardFoundImg.style.backgroundImage = `url(${cardData.field7})`;
   });

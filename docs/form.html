@@ -18,7 +18,7 @@
     />
 
     
-    <link rel="stylesheet" href="./assets/main-187dc380.css">
+    <link rel="stylesheet" href="./assets/main-aa953b29.css">
   </head>
   <body>
     <div class="background-form">
@@ -36,35 +36,36 @@
   </legend>
 
   <div class="fill-form js-form-design collapse">
-    <label for="option1">
+    <label for="nubes">
       <input
-        class="js-azul"
-        id="option1"
+        checked
+        class="js-nubes"
+        id="nubes"
         type="radio"
         value="choosecolor"
         name="background"
       />
-      Fondo 1
+      Fondo nubes
     </label>
-    <label for="option2">
+    <label for="espacio">
       <input
-        class="js-amarillo"
-        id="option2"
+        class="js-espacio"
+        id="espacio"
         type="radio"
         value="choosecolor"
         name="background"
       />
-      Fondo 2
+      Fondo espacio
     </label>
-    <label for="option3">
+    <label for="forky">
       <input
-        class="js-verde"
-        id="option3"
+        class="js-forky"
+        id="forky"
         type="radio"
         value="choosecolor"
         name="background"
       />
-      Fondo 3
+      Fondo Forky
     </label>
   </div>
 </fieldset>
@@ -91,7 +92,7 @@
         class="js-input-nameAddressee"
         name="nameAddressee"
         type="text"
-        placeholder="To: Buddy"
+        placeholder="To: Woody"
         required
       />
     </div>
@@ -231,19 +232,25 @@
 
         </form>
         <section class="section-card">
-  <button class="section-card__reset js-button-reset" type="reset">
-    RESET
-    <i class="fa-solid fa-trash-can"></i>
-  </button>
+  <div class="section-card__resetAudio">
+    <button class="section-card__reset js-button-reset" type="reset">
+      RESET
+      <i class="fa-solid fa-trash-can"></i>
+    </button>
+    <audio class="section-card__audio" controls autoplay loop>
+      <source src="./Audio/Hay-un-amigo-en-mí.mp3" type="audio/mpeg" />
+    </audio>
+  </div>
   <div class="card">
     <div class="card__found">
       <div
         class="card__found__img js-card-found-img card-background-nubes"
+        id="nubes"
       ></div>
     </div>
 
     <div class="card__nameAddressee">
-      <p class="js-card-nameAddressee">To: Buddy</p>
+      <p class="js-card-nameAddressee">To: Woody</p>
     </div>
 
     <div class="card__message">
@@ -271,12 +278,7 @@
 </section>
 
       </div>
-      <footer class="footer">
-  <div class="foot">
-    <p class="name">Hasta el infinito © 2024</p>
-  </div>
-</footer>
-
+      
     </div>
     <script type="text/javascript" src="./js/main.js"></script>
   </body>

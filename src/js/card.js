@@ -41,14 +41,14 @@ const defaultImageURL = "images/mr-potato.png";
 
 // Resetear los valores de la card
 cardButtonReset.addEventListener("click", () => {
-  cardNameAddressee.textContent = "To: Buddy";
+  cardNameAddressee.textContent = "To: Woody";
   cardMessage.textContent = "Te voy a echar mucho de menos";
   cardPhone.textContent = "612345678";
   cardNameSender.textContent = "Mr. Potato";
   cardInsta.textContent = "@mrpotato";
   cardPhotoImg.style.backgroundImage = 'url("images/mr-potato.png")';
   cardFoundImg.classList.add("card-background-nubes");
-  cardFoundImg.classList.remove("card-background-naves");
+  cardFoundImg.classList.remove("card-background-espacio");
   cardFoundImg.classList.remove("card-background-forky");
   // Resetear los valores de los campos del formulario
   formContainer.reset();
