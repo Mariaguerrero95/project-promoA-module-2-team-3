@@ -3,13 +3,13 @@
 const urlParam = new URLSearchParams(window.location.search);
 const id = urlParam.get("id");
 
-const cardNameAddressee = document.querySelector(".js-card-nameAddressee");
-const cardMessage = document.querySelector(".js-card-message");
-const cardPhotoImg = document.querySelector(".js-card-photo-img");
-const cardPhone = document.querySelector(".js-card-phone");
-const cardNameSender = document.querySelector(".js-card-nameSender");
-const cardInsta = document.querySelector(".js-card-insta");
-const cardFoundImg = document.querySelector(".js-card-found-img");
+// const cardNameAddressee = document.querySelector(".js-card-nameAddressee");
+// const cardMessage = document.querySelector(".js-card-message");
+// const cardPhotoImg = document.querySelector(".js-card-photo-img");
+// const cardPhone = document.querySelector(".js-card-phone");
+// const cardNameSender = document.querySelector(".js-card-nameSender");
+// const cardInsta = document.querySelector(".js-card-insta");
+// const cardFoundImg = document.querySelector(".js-card-found-img");
 
 fetch(`https://dev.adalab.es/api/info/${id}`)
   .then((response) => response.json())
