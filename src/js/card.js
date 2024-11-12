@@ -10,6 +10,10 @@ const cardNameSender = document.querySelector(".js-card-nameSender");
 const cardInsta = document.querySelector(".js-card-insta");
 const cardButtonReset = document.querySelector(".js-button-reset");
 
+const playBtn = document.querySelector(".js-audioPlay");
+const pauseBtn = document.querySelector(".js-audioPause");
+const audio = document.querySelector(".js-audio");
+
 /* PREVISUALIZACIÓN
 Cuando la usuaria escriba en el input de rellena, quiero que se previsualice en el card:
 1. Recoger todos los inputs de rellena
@@ -58,4 +62,12 @@ cardButtonReset.addEventListener("click", () => {
   //     nameSenderInput.value = "";
   //     instaInput.value = "";
   profileImage.style.backgroundImage = "";
+});
+
+playBtn.addEventListener("click", () => {
+  audio.play();
+});
+
+pauseBtn.addEventListener("click", () => {
+  audio.pause();
 });
