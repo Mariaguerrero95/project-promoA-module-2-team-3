@@ -4,9 +4,17 @@
       RESET
       <i class="fa-solid fa-trash-can"></i>
     </button>
-    <audio class="section-card__audio" controls autoplay loop>
-      <source src="/Audio/Hay-un-amigo-en-mí.mp3" type="audio/mpeg" />
-    </audio>
+    <div class="section-card__audio">
+      <audio class="js-audio" autoplay loop>
+        <source src="/Audio/Hay-un-amigo-en-mí.mp3" type="audio/mpeg" />
+      </audio>
+      <button class="section-card__audio__btn js-audioPlay">
+        <i class="fa-solid fa-circle-play"></i>
+      </button>
+      <button class="section-card__audio__btn js-audioPause">
+        <i class="fa-solid fa-circle-pause"></i>
+      </button>
+    </div>
   </div>
   <div class="card">
     <div class="card__found">
