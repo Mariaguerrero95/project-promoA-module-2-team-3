@@ -7,4 +7,3 @@ import "./formAll.js";
 import "./get-avatar.js";
 import "./card.js";
 import "./form-comparte.js";
-import "./cardDetails.js";
