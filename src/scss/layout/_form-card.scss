@@ -11,6 +11,13 @@
     width: 50%;
   }
 
+  &__resetAudio {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 380px;
+    height: 70px;
+  }
   &__reset {
     cursor: pointer;
     width: 130px;
@@ -19,14 +26,22 @@
     border: 2px solid;
     border-radius: 10px;
     padding: 5px;
+    margin-top: 16px;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    margin-left: 40px;
 
     & i {
-      padding-bottom: 5px;
+      padding: 5px;
     }
+  }
+  &__audio {
+    cursor: pointer;
+    background-color: #1786eb70;
+    width: 100px;
+    border: none;
+    border-radius: 10px;
+    padding: 5px;
   }
 }
 
