@@ -18,17 +18,18 @@ const htmlFilesList = Object.fromEntries(
     // file, so e.g. src/nested/foo.js becomes nested/foo
     path.relative(
       "src",
-      file.slice(0, file.length - path.extname(file).length),
+      file.slice(0, file.length - path.extname(file).length)
     ),
     // This expands the relative paths to absolute paths, so e.g.
     // src/nested/foo becomes /project/src/nested/foo.js
     fileURLToPath(new URL(file, import.meta.url)),
-  ]),
+  ])
 );
 
 const inputFilesList = {
   ...htmlFilesList,
   main: "src/js/main.js",
+  cardDetailsjs: "src/js/cardDetails.js",
 };
 
 export default defineConfig({
@@ -47,6 +48,9 @@ export default defineConfig({
         entryFileNames: ({ name }) => {
           if (name === "main") {
             return "js/main.js";
+          }
+          if (name === "cardDetailsjs") {
+            return "js/cardDetails.js";
           }
           // default value
           // ref: https://rollupjs.org/configuration-options/#output-entryfilenames
@@ -67,7 +71,7 @@ export default defineConfig({
       /* pass your config */
     }),
     concat({
-      input: ["main.js"],
+      input: ["main.js", "cardDetails.js"],
     }),
   ],
 });
