@@ -36,53 +36,53 @@
   background-image: url("/images/forky.jpg");
   background-size: cover;
 }
-.labelNubes{
+.labelNubes {
   display: flex;
+  align-items: center;
   gap: 20px;
 }
-.labelForky{
+.labelForky {
   display: flex;
+  align-items: center;
   gap: 20px;
 }
-.labelEspacio{
+.labelEspacio {
   display: flex;
+  align-items: center;
   gap: 20px;
 }
-.paleta1{
+.paleta1 {
   display: flex;
   justify-content: space-between;
   margin-left: 12px;
 }
-.paleta1-1{
+.paleta1-1 {
   width: 30px;
   height: 30px;
   background-image: url("/images/nubes.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  
 }
-.paleta2{
+.paleta2 {
   display: flex;
   justify-content: space-between;
 }
-.paleta2-1{
+.paleta2-1 {
   width: 30px;
   height: 30px;
   background-image: url("/images/espacio.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  
 }
-.paleta3{
+.paleta3 {
   display: flex;
   justify-content: space-between;
   margin-left: 12px;
 }
-.paleta3-1{
+.paleta3-1 {
   width: 30px;
   height: 30px;
   background-image: url("/images/forky.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
-
