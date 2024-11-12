@@ -54,50 +54,24 @@
   margin-left: 12px;
 }
 .paleta1-1{
-  width: 15px;
-  height: 15px;
-  background-color: #0074e8;
+  width: 30px;
+  height: 30px;
+  background-image: url("/images/nubes.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
   
 }
-.paleta1-2{
-  width: 15px;
-  height: 15px;
-  background-color: #e6f4ff;
-}
-.paleta1-3{
-  width: 15px;
-  height: 15px;
-  background-color: #abdbff;
-}
-.paleta1-4{
-  width: 15px;
-  height: 15px;
-  background-color: #48d5c6;
-}
-
 .paleta2{
   display: flex;
   justify-content: space-between;
 }
 .paleta2-1{
-  width: 15px;
-  height: 15px;
-  background-color: #9e68ff;
-}
-.paleta2-2{
-  width: 15px;
-  height: 15px;
-  background-color: #6bec8c;
-}
-.paleta2-3{
-  width: 15px;
-  height: 15px;
-  background-color: #fdc900 ;
-}
-.paleta2-4{
-  width: 15px;
-  height: 15px;
-  background-color: #75bfff;;
+  width: 30px;
+  height: 30px;
+  background-image: url("/images/espacio.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  
 }
 .paleta3{
   display: flex;
@@ -105,25 +79,10 @@
   margin-left: 12px;
 }
 .paleta3-1{
-  width: 15px;
-  height: 15px;
-  background-color: #ffc58f;
-
-}
-.paleta3-2{
-  width: 15px;
-  height: 15px;
-  background-color: #fdc900;
-
-}
-.paleta3-3{
-  width: 15px;
-  height: 15px;
-  background-color: #cc0000;
-}
-.paleta3-4{
-  width: 15px;
-  height: 15px;
-  background-color: #6bec8c;
+  width: 30px;
+  height: 30px;
+  background-image: url("/images/forky.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
